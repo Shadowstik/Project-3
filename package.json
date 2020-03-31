@@ -1,0 +1,22 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "project Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadowstik/Project-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shadowstik/Project-3/issues"
+  },
+  "homepage": "https://github.com/Shadowstik/Project-3#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
