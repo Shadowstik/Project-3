@@ -63,7 +63,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('fonts/dancing-script-v14-latin-regular.eot'); 
-    src: local(''),
+    src: local('Dancing Script'),
          url('fonts/dancing-script-v14-latin-regular.eot?#iefix') format('embedded-opentype'), 
          url('fonts/dancing-script-v14-latin-regular.woff2') format('woff2'), 
          url('fonts/dancing-script-v14-latin-regular.woff') format('woff'), 
@@ -72,45 +72,48 @@
 }
 
 /* police titre la palette du goût */
+
 @font-face {
     font-family: 'Kaushan Script';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/kaushan-script-v8-latin-regular.eot'); 
+    src: url('fonts/kaushan-script-v8-latin-regular.eot');
     src: local('Kaushan Script'), local('KaushanScript-Regular'),
          url('fonts/kaushan-script-v8-latin-regular.eot?#iefix') format('embedded-opentype'), 
          url('fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'), 
          url('fonts/kaushan-script-v8-latin-regular.woff') format('woff'), 
          url('fonts/kaushan-script-v8-latin-regular.ttf') format('truetype'), 
          url('fonts/kaushan-script-v8-latin-regular.svg#KaushanScript') format('svg'); 
-}
-
-/* police menu 2 */
-@font-face {
-    font-family: 'Crimson Text';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/crimson-text-v10-latin-regular.eot'); 
-    src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
-         url('fonts/crimson-text-v10-latin-regular.eot?#iefix') format('embedded-opentype'), 
-         url('fonts/crimson-text-v10-latin-regular.woff2') format('woff2'), 
-         url('fonts/crimson-text-v10-latin-regular.woff') format('woff'), 
-         url('fonts/crimson-text-v10-latin-regular.ttf') format('truetype'), 
-         url('fonts/crimson-text-v10-latin-regular.svg#CrimsonText') format('svg'); 
-}
+  }
 
 /* sous-titre menu 2 */
+
 @font-face {
-    font-family: 'Cantata One';
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/source-serif-pro-v7-latin-700.eot'); 
+    src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'),
+         url('fonts/source-serif-pro-v7-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/source-serif-pro-v7-latin-700.woff2') format('woff2'), 
+         url('fonts/source-serif-pro-v7-latin-700.woff') format('woff'), 
+         url('fonts/source-serif-pro-v7-latin-700.ttf') format('truetype'), 
+         url('fonts/source-serif-pro-v7-latin-700.svg#SourceSerifPro') format('svg'); 
+  }
+
+/* contenu menu 2 */
+
+@font-face {
+    font-family: 'Lusitana';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/cantata-one-v9-latin-regular.eot'); 
-    src: local('Cantata One'), local('CantataOne-Regular'),
-         url('fonts/cantata-one-v9-latin-regular.eot?#iefix') format('embedded-opentype'), 
-         url('fonts/cantata-one-v9-latin-regular.woff2') format('woff2'), 
-         url('fonts/cantata-one-v9-latin-regular.woff') format('woff'), 
-         url('fonts/cantata-one-v9-latin-regular.ttf') format('truetype'), 
-         url('fonts/cantata-one-v9-latin-regular.svg#CantataOne') format('svg'); 
+    src: url('fonts/lusitana-v7-latin-regular.eot'); 
+    src: local('Lusitana'),
+         url('fonts/lusitana-v7-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/lusitana-v7-latin-regular.woff2') format('woff2'), 
+         url('fonts/lusitana-v7-latin-regular.woff') format('woff'), 
+         url('fonts/lusitana-v7-latin-regular.ttf') format('truetype'), 
+         url('fonts/lusitana-v7-latin-regular.svg#Lusitana') format('svg'); 
   }
   
 /* police contenue menus 1, 3 et 4 */
@@ -144,7 +147,7 @@ $color-primary: #FACA44;
 
 /* menu page */
 $color-menu: #000;
-$color-shadow: #ededed;
+$color-shadow: #c9c4c4;
 
 /* menu 1*/
 $bg-menu1: #fcdfdb;
@@ -179,6 +182,34 @@ $green-light: #acef75;
         box-shadow: 0 0 20px $color-shadow, 0 0 20px $color-shadow, 0 0 20px $color-shadow;
 }
 
+@mixin heading-title{
+    color: $color-menu;
+    font-weight: 700;
+    font-family: "montserrat", sans-serif;
+}
+
+@mixin text-gradient{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin logo-note{
+    background: linear-gradient(to right, $magenta, $orange);
+}
+
+@mixin text-french{
+    background: linear-gradient(160deg, $orange-french, $purple-french, $blue-french);
+}
+
+@mixin text-delice{
+    background: linear-gradient(160deg, $blue-night , $blue-medium, $blue-light);
+}
+
+@mixin text-taste{
+    background: linear-gradient(160deg, $green, $green-medium, $green-light);
+}
+
 %structure, header, footer, button, section, a, .main-menu{
     border: 2px solid red;
 }
@@ -187,12 +218,14 @@ $green-light: #acef75;
 
 .header{
     width: 100%;
-    height: 240;
+    height: 140px;
     @include primary-theme;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__heading{
-        text-align: center;
-        font-size: 6rem;
+        font-size: 4.5rem;
         font-weight: bold;
         letter-spacing: -3px;
         &> a{
@@ -213,7 +246,7 @@ $green-light: #acef75;
 /* main-menu */
 
 .main-menu{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +254,7 @@ $green-light: #acef75;
     &__heading{
         width: 40%;
         height: 1000px;
-        margin: 40px;
+        margin: 45px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -229,54 +262,78 @@ $green-light: #acef75;
         align-items: center;
         @include menu-shadow;
         text-decoration: none;
-        font-size: 2rem;
-        &--bg1{
-            background-color: $bg-menu1; 
+        &--note{
+            background-color: $bg-menu1;
+            color: $color-menu; 
             &> p{
                 font-family: "Segoe Print", cursive;
                 font-size: 3rem;
+                margin: 0;
+                &:nth-child(1){
+                    @include text-taste;
+                    @include text-gradient;
+                }
             }
             &> h2{
                 font-family: "Devonshire", cursive;
+                font-size: 3rem;
+                margin-top: 0;
             } 
         }
-        &--bg2{
+        &--french{
             background-color: $bg-menu2;
             &> p{
-                font-family: "Cantata One", serif;
+                font-family: "Source Serif Pro", serif;
                 font-size: 3rem;
+                color:$orange-french;
             }
             &> h2{
                 font-family: "Croissant One", serif;
+                font-size: 2.2rem;
+                @include text-french;
+                @include text-gradient;
             }
         }
-        &--bg3{
+        &--delice{
             background-color: $bg-menu3;
             &> p{
                 font-family: "Segoe Print", cursive;
                 font-size: 3rem;
+                color: $blue-light;
             }
             &> h2{
                 font-family: "Dancing Script", cursive;
+                font-size: 3rem;
+                @include text-delice;
+                @include text-gradient;
             }
         }
-        &--bg4{
+        &--taste{
             background-color: $bg-menu4;
             &> p{
                 font-family: "Segoe Print", cursive;
                 font-size: 3rem;
+                color: $green-light;
             }
             &> h2{
                 font-family: "Kaushan Script", cursive;
+                font-size: 3rem;
+                @include text-taste;
+                @include text-gradient;
             }
 
         }
     }
 } 
 
+/* all menu */
+
+.heading-menu{
+    @include heading-title;
+    text-align: center;
+}
+
 /* menu-1 */
-
-
 
 .page-menu{
     width: 80%;
@@ -289,22 +346,103 @@ $green-light: #acef75;
     align-items: center;
     @include menu-shadow;
     font-family: "Segoe Print", cursive;
+    &.page-menu--legal{
+        font-family: "montserrat", sans-serif;
+        background-color: #e6e0e0;
+        padding: 40px;
+    }
+    &.page-menu--french{
+        font-family: "Lusitana", serif;
+        background-color: $bg-menu2;
+    }
+    &.page-menu--none{
+        &> h2{
+            font-weight: normal;
+        }
+    }
     &__heading{
         width: 80%;
         margin: 0 auto 40px;
-    }    
+        font-size: 1.2rem;
+        &> div{
+            display: flex;
+            justify-content: space-between;
+        } 
+        &> h2{
+            text-align: center;
+        } 
+        &.page-menu__heading--french1{
+            color: $orange-french;
+            &> h2{
+                font-family: "Source Serif Pro", serif;
+            }
+            
+        }
+        &.page-menu__heading--french2{
+            color: $purple-french;
+            &> h2{
+                font-family: "Source Serif Pro", serif;
+            }
+            
+        }  
+        &.page-menu__heading--french3{
+            color: $blue-french;
+            &> h2{
+                font-family: "Source Serif Pro", serif;
+            }
+            
+        }    
+    }
+    &__logo{
+        font-size: 4rem;
+        margin: 20px 0 0;
+        @include logo-note;
+        @include text-gradient;
+    }
+    &__title{
+        margin: 80px auto;
+        &.page-menu__title--note{
+            font-family: "Devonshire", cursive;
+            font-size: 3rem;
+        }
+        &.page-menu__title--french{
+            font-family: "Croissant One", serif;
+            font-size: 2.5rem; 
+            @include text-french;
+            @include text-gradient;
+        }
+        &.page-menu__title--delice{
+            font-family: "Dancing Script", cursive;
+            font-size: 4.5rem;
+            @include text-delice;
+            @include text-gradient;
+        }
+        &.page-menu__title--taste{
+            font-family: "Kaushan Script", cursive;
+            font-size: 4rem;
+            @include text-taste;
+            @include text-gradient;
+        }
+    }
+    &__subtitle{
+        display: flex;
+    }
+          
 }
+
+
 
 /* preview */
 
 .btn{
     @include primary-theme;
+    width: 30%;
     border-radius: 20px;
     margin: 20px auto;
     &__heading{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: normal;
-        padding: 5px 80px;
+        margin: 10px 30px;
     }
 }
 
@@ -312,14 +450,17 @@ $green-light: #acef75;
 
 .footer{
     width: 100%;
-    height: 140px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include primary-theme;
     margin-top: 40px;
+    position: sticky;
+    bottom: 0;
     &__heading{
-        font-size: 2rem;
+        margin: auto 50px;
+        font-size: 1.8rem;
         font-weight: normal;
         &> a{
             text-decoration: none;
@@ -327,3 +468,5 @@ $green-light: #acef75;
         }
     }
 }
+
+
