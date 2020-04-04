@@ -6,90 +6,90 @@
 
 /* police header et footer*/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/montserrat-v14-latin-regular.eot");
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("fonts/montserrat-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-v14-latin-regular.woff2") format("woff2"), url("fonts/montserrat-v14-latin-regular.woff") format("woff"), url("fonts/montserrat-v14-latin-regular.ttf") format("truetype"), url("fonts/montserrat-v14-latin-regular.svg#Montserrat") format("svg");
+  src: url("fonts/montserrat-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-v14-latin-regular.woff") format("woff"), url("fonts/montserrat-v14-latin-regular.ttf") format("truetype"), url("fonts/montserrat-v14-latin-regular.svg?#webfont") format("svg");
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
+  font-family: "Montserrat";
+  font-style: bold;
   font-weight: 700;
   src: url("fonts/montserrat-v14-latin-700.eot");
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-v14-latin-700.woff2") format("woff2"), url("fonts/montserrat-v14-latin-700.woff") format("woff"), url("fonts/montserrat-v14-latin-700.ttf") format("truetype"), url("fonts/montserrat-v14-latin-700.svg#Montserrat") format("svg");
+  src: url("fonts/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-v14-latin-700.woff") format("woff"), url("fonts/montserrat-v14-latin-700.ttf") format("truetype"), url("fonts/montserrat-v14-latin-700.svg?#webfont") format("svg");
 }
 
 /* police  titre la note enchantée*/
 @font-face {
-  font-family: 'Devonshire';
+  font-family: "Devonshire";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/devonshire-v8-latin-regular.eot");
-  src: local("Devonshire-Regular"), url("fonts/devonshire-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/devonshire-v8-latin-regular.woff2") format("woff2"), url("fonts/devonshire-v8-latin-regular.woff") format("woff"), url("fonts/devonshire-v8-latin-regular.ttf") format("truetype"), url("fonts/devonshire-v8-latin-regular.svg#Devonshire") format("svg");
+  src: url("fonts/devonshire-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/devonshire-v8-latin-regular.woff") format("woff"), url("fonts/devonshire-v8-latin-regular.ttf") format("truetype"), url("fonts/devonshire-v8-latin-regular.svg?#webfont") format("svg");
 }
 
 /* police  titre le chic à la française */
 @font-face {
-  font-family: 'Croissant One';
+  font-family: "Croissant One";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/croissant-one-v7-latin-regular.eot");
-  src: local("Croissant One"), local("CroissantOne-Regular"), url("fonts/croissant-one-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/croissant-one-v7-latin-regular.woff2") format("woff2"), url("fonts/croissant-one-v7-latin-regular.woff") format("woff"), url("fonts/croissant-one-v7-latin-regular.ttf") format("truetype"), url("fonts/croissant-one-v7-latin-regular.svg#CroissantOne") format("svg");
+  src: url("fonts/croissant-one-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/croissant-one-v7-latin-regular.woff") format("woff"), url("fonts/croissant-one-v7-latin-regular.ttf") format("truetype"), url("fonts/croissant-one-v7-latin-regular.svg?#webfont") format("svg");
 }
 
 /* police titre le délice des papilles */
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/dancing-script-v14-latin-regular.eot");
-  src: local("Dancing Script"), url("fonts/dancing-script-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/dancing-script-v14-latin-regular.woff2") format("woff2"), url("fonts/dancing-script-v14-latin-regular.woff") format("woff"), url("fonts/dancing-script-v14-latin-regular.ttf") format("truetype"), url("fonts/dancing-script-v14-latin-regular.svg#DancingScript") format("svg");
+  src: url("fonts/dancing-script-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/dancing-script-v14-latin-regular.woff") format("woff"), url("fonts/dancing-script-v14-latin-regular.ttf") format("truetype"), url("fonts/dancing-script-v14-latin-regular.svg?#webfont") format("svg");
 }
 
 /* police titre la palette du goût */
 @font-face {
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/kaushan-script-v8-latin-regular.eot");
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("fonts/kaushan-script-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"), url("fonts/kaushan-script-v8-latin-regular.woff") format("woff"), url("fonts/kaushan-script-v8-latin-regular.ttf") format("truetype"), url("fonts/kaushan-script-v8-latin-regular.svg#KaushanScript") format("svg");
+  src: url("fonts/kaushan-script-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/kaushan-script-v8-latin-regular.woff") format("woff"), url("fonts/kaushan-script-v8-latin-regular.ttf") format("truetype"), url("fonts/kaushan-script-v8-latin-regular.svg?#webfont") format("svg");
 }
 
 /* sous-titre menu 2 */
 @font-face {
-  font-family: 'Source Serif Pro';
-  font-style: normal;
+  font-family: "Source Serif Pro";
+  font-style: bold;
   font-weight: 700;
   src: url("fonts/source-serif-pro-v7-latin-700.eot");
-  src: local("Source Serif Pro Bold"), local("SourceSerifPro-Bold"), url("fonts/source-serif-pro-v7-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/source-serif-pro-v7-latin-700.woff2") format("woff2"), url("fonts/source-serif-pro-v7-latin-700.woff") format("woff"), url("fonts/source-serif-pro-v7-latin-700.ttf") format("truetype"), url("fonts/source-serif-pro-v7-latin-700.svg#SourceSerifPro") format("svg");
+  src: url("fonts/source-serif-pro-v7-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/source-serif-pro-v7-latin-700.woff") format("woff"), url("fonts/source-serif-pro-v7-latin-700.ttf") format("truetype"), url("fonts/source-serif-pro-v7-latin-700.svg?#webfont") format("svg");
 }
 
 /* contenu menu 2 */
 @font-face {
-  font-family: 'Lusitana';
+  font-family: "Lusitana";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/lusitana-v7-latin-regular.eot");
-  src: local("Lusitana"), url("fonts/lusitana-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/lusitana-v7-latin-regular.woff2") format("woff2"), url("fonts/lusitana-v7-latin-regular.woff") format("woff"), url("fonts/lusitana-v7-latin-regular.ttf") format("truetype"), url("fonts/lusitana-v7-latin-regular.svg#Lusitana") format("svg");
+  src: url("fonts/lusitana-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/lusitana-v7-latin-regular.woff") format("woff"), url("fonts/lusitana-v7-latin-regular.ttf") format("truetype"), url("fonts/lusitana-v7-latin-regular.svg?#webfont") format("svg");
 }
 
 /* police contenue menus 1, 3 et 4 */
 @font-face {
-  font-family: 'Segoe Print';
-  src: url("fonts/SegoePrint.eot");
-  src: url("fonts/SegoePrint.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint.woff2") format("woff2"), url("fonts/SegoePrint.woff") format("woff"), url("fonts/SegoePrint.ttf") format("truetype"), url("fonts/SegoePrint.svg#SegoePrint") format("svg");
-  font-weight: normal;
+  font-family: "Segoe Print";
   font-style: normal;
+  font-weight: 400;
+  src: url("fonts/SegoePrint.eot");
+  src: url("fonts/SegoePrint.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint.woff") format("woff"), url("fonts/SegoePrint.ttf") format("truetype"), url("fonts/SegoePrint.svg?#webfont") format("svg");
 }
 
 @font-face {
-  font-family: 'Segoe Print';
+  font-family: "Segoe Print";
+  font-style: bold;
+  font-weight: normal;
   src: url("fonts/SegoePrint-Bold.eot");
-  src: url("fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint-Bold.woff2") format("woff2"), url("fonts/SegoePrint-Bold.woff") format("woff"), url("fonts/SegoePrint-Bold.ttf") format("truetype"), url("fonts/SegoePrint-Bold.svg#SegoePrint-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
+  src: url("fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint-Bold.woff") format("woff"), url("fonts/SegoePrint-Bold.ttf") format("truetype"), url("fonts/SegoePrint-Bold.svg?#webfont") format("svg");
 }
 
 /* header et footer */
@@ -98,7 +98,17 @@
 /* menu 2*/
 /* menu 3*/
 /* menu 4*/
-header, footer, button, section, a, .main-menu {
+/*@mixin fonts-cursive($cursive){
+    font-family: "montserrat", sans-serif;
+    font-family: "Croissant One", serif;
+    font-family: "Cantata One", serif;
+    font-family: "Crimson Text", serif;
+    font-family: "Devonshire", cursive;
+    font-family: "Segoe Print", cursive;
+    font-family: "Dancing Script", cursive;
+    font-family: "Kaushan Script", cursive;  
+}*/
+header, footer, button, section, a, main, main h1 {
   border: 2px solid red;
 }
 
@@ -133,7 +143,7 @@ header, footer, button, section, a, .main-menu {
 }
 
 /* main-wrapper */
-.main-wrapper {
+.wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +158,7 @@ header, footer, button, section, a, .main-menu {
 }
 
 /* main-menu */
-.main-menu {
+.main-page {
   width: 100%;
   margin: auto;
   display: -webkit-box;
@@ -161,11 +171,12 @@ header, footer, button, section, a, .main-menu {
           justify-content: center;
 }
 
-.main-menu__heading {
-  width: 40%;
-  height: 1000px;
-  margin: 45px;
-  text-align: center;
+.main-menu {
+  width: 41%;
+  height: 700px;
+  margin: 40px;
+  -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
+          box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,98 +190,99 @@ header, footer, button, section, a, .main-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
-          box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   text-decoration: none;
 }
 
-.main-menu__heading--note {
+.main-menu > p {
+  font-size: 3rem;
+  font-family: "Segoe Print", cursive;
+}
+
+.main-menu.main-menu--note {
   background-color: #fcdfdb;
   color: #000;
 }
 
-.main-menu__heading--note > p {
-  font-family: "Segoe Print", cursive;
-  font-size: 3rem;
-  margin: 0;
-}
-
-.main-menu__heading--note > p:nth-child(1) {
-  background: -webkit-linear-gradient(290deg, #45993e, #8dd565, #acef75);
-  background: -o-linear-gradient(290deg, #45993e, #8dd565, #acef75);
-  background: linear-gradient(160deg, #45993e, #8dd565, #acef75);
+.main-menu.main-menu--note > p:first-child {
+  background: -webkit-gradient(linear, left top, right top, from(#f15861), color-stop(#f16062), to(#f6916a));
+  background: -webkit-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: -o-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: linear-gradient(to right, #f15861, #f16062, #f6916a);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 6rem;
+  margin: 0;
+  line-height: 6rem;
 }
 
-.main-menu__heading--note > h2 {
+.main-menu.main-menu--note > h2 {
   font-family: "Devonshire", cursive;
   font-size: 3rem;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
-.main-menu__heading--french {
+.main-menu.main-menu--french {
   background-color: #fff5fe;
 }
 
-.main-menu__heading--french > p {
+.main-menu.main-menu--french > p {
   font-family: "Source Serif Pro", serif;
-  font-size: 3rem;
   color: #c67412;
 }
 
-.main-menu__heading--french > h2 {
+.main-menu.main-menu--french > h2 {
   font-family: "Croissant One", serif;
-  font-size: 2.2rem;
   background: -webkit-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
   background: -o-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
   background: linear-gradient(160deg, #c67412, #a56799, #6e4ccc);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 2.2rem;
+  margin: 0 auto;
 }
 
-.main-menu__heading--delice {
+.main-menu.main-menu--delice {
   background-color: #f9f9f9;
 }
 
-.main-menu__heading--delice > p {
-  font-family: "Segoe Print", cursive;
-  font-size: 3rem;
+.main-menu.main-menu--delice > p {
   color: #229df9;
 }
 
-.main-menu__heading--delice > h2 {
+.main-menu.main-menu--delice > h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 3rem;
   background: -webkit-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
   background: -o-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
   background: linear-gradient(160deg, #0228dd, #0670f3, #229df9);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 0 6px;
 }
 
-.main-menu__heading--taste {
+.main-menu.main-menu--taste {
   background-color: #fdfffd;
 }
 
-.main-menu__heading--taste > p {
-  font-family: "Segoe Print", cursive;
-  font-size: 3rem;
+.main-menu.main-menu--taste > p {
   color: #acef75;
 }
 
-.main-menu__heading--taste > h2 {
+.main-menu.main-menu--taste > h2 {
   font-family: "Kaushan Script", cursive;
-  font-size: 3rem;
   background: -webkit-linear-gradient(290deg, #45993e, #8dd565, #acef75);
   background: -o-linear-gradient(290deg, #45993e, #8dd565, #acef75);
   background: linear-gradient(160deg, #45993e, #8dd565, #acef75);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 0 6px;
 }
 
 /* all menu */
@@ -284,10 +296,8 @@ header, footer, button, section, a, .main-menu {
 /* menu-1 */
 .page-menu {
   width: 80%;
-  background-color: #fcdfdb;
   color: #000;
   margin: 40px auto 100px;
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,25 +313,10 @@ header, footer, button, section, a, .main-menu {
   font-family: "Segoe Print", cursive;
 }
 
-.page-menu.page-menu--legal {
-  font-family: "montserrat", sans-serif;
-  background-color: #e6e0e0;
-  padding: 40px;
-}
-
-.page-menu.page-menu--french {
-  font-family: "Lusitana", serif;
-  background-color: #fff5fe;
-}
-
-.page-menu.page-menu--none > h2 {
-  font-weight: normal;
-}
-
 .page-menu__heading {
   width: 80%;
   margin: 0 auto 40px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .page-menu__heading > div {
@@ -337,88 +332,144 @@ header, footer, button, section, a, .main-menu {
   text-align: center;
 }
 
-.page-menu__heading.page-menu__heading--french1 {
+.page-menu__heading.page-menu__heading--orange {
+  font-family: "Lusitana", serif;
   color: #c67412;
 }
 
-.page-menu__heading.page-menu__heading--french1 > h2 {
+.page-menu__heading.page-menu__heading--orange > h2 {
   font-family: "Source Serif Pro", serif;
 }
 
-.page-menu__heading.page-menu__heading--french2 {
+.page-menu__heading.page-menu__heading--purple {
+  font-family: "Lusitana", serif;
   color: #a56799;
 }
 
-.page-menu__heading.page-menu__heading--french2 > h2 {
+.page-menu__heading.page-menu__heading--purple > h2 {
   font-family: "Source Serif Pro", serif;
 }
 
-.page-menu__heading.page-menu__heading--french3 {
+.page-menu__heading.page-menu__heading--blue {
+  font-family: "Lusitana", serif;
   color: #6e4ccc;
 }
 
-.page-menu__heading.page-menu__heading--french3 > h2 {
+.page-menu__heading.page-menu__heading--blue > h2 {
   font-family: "Source Serif Pro", serif;
 }
 
-.page-menu__logo {
-  font-size: 4rem;
-  margin: 20px 0 0;
-  background: -webkit-gradient(linear, left top, right top, from(#f15861), to(#f6916a));
-  background: -webkit-linear-gradient(left, #f15861, #f6916a);
-  background: -o-linear-gradient(left, #f15861, #f6916a);
-  background: linear-gradient(to right, #f15861, #f6916a);
+.page-menu.page-menu--note {
+  background-color: #fcdfdb;
+}
+
+.page-menu.page-menu--note > h3 {
+  background: -webkit-gradient(linear, left top, right top, from(#f15861), color-stop(#f16062), to(#f6916a));
+  background: -webkit-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: -o-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: linear-gradient(to right, #f15861, #f16062, #f6916a);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 5rem;
+  margin: 40px auto 0;
+  line-height: 5rem;
 }
 
-.page-menu__title {
-  margin: 80px auto;
-}
-
-.page-menu__title.page-menu__title--note {
+.page-menu.page-menu--note > h1 {
   font-family: "Devonshire", cursive;
-  font-size: 3rem;
-}
-
-.page-menu__title.page-menu__title--french {
-  font-family: "Croissant One", serif;
-  font-size: 2.5rem;
-  background: -webkit-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
-  background: -o-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
-  background: linear-gradient(160deg, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.page-menu__title.page-menu__title--delice {
-  font-family: "Dancing Script", cursive;
-  font-size: 4.5rem;
-  background: -webkit-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
-  background: -o-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
-  background: linear-gradient(160deg, #0228dd, #0670f3, #229df9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.page-menu__title.page-menu__title--taste {
-  font-family: "Kaushan Script", cursive;
-  font-size: 4rem;
-  background: -webkit-linear-gradient(290deg, #45993e, #8dd565, #acef75);
-  background: -o-linear-gradient(290deg, #45993e, #8dd565, #acef75);
-  background: linear-gradient(160deg, #45993e, #8dd565, #acef75);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 3.5rem;
+  margin-top: 0;
 }
 
 .page-menu__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto 50px;
+}
+
+.page-menu__subtitle > p {
+  background: -webkit-gradient(linear, left top, right top, from(#f15861), color-stop(#f16062), to(#f6916a));
+  background: -webkit-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: -o-linear-gradient(left, #f15861, #f16062, #f6916a);
+  background: linear-gradient(to right, #f15861, #f16062, #f6916a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  margin: 0 10px 0 0;
+  line-height: 3rem;
+}
+
+.page-menu__subtitle > h2 {
+  font-family: "Devonshire", cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.page-menu.page-menu--french {
+  background-color: #fff5fe;
+}
+
+.page-menu.page-menu--french > h1 {
+  font-family: "Croissant One", serif;
+  background: -webkit-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
+  background: -o-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
+  background: linear-gradient(160deg, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  margin-top: 60px;
+}
+
+.page-menu.page-menu--delice {
+  background-color: #f9f9f9;
+}
+
+.page-menu.page-menu--delice > h1 {
+  font-family: "Dancing Script", cursive;
+  background: -webkit-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
+  background: -o-linear-gradient(290deg, #0228dd, #0670f3, #229df9);
+  background: linear-gradient(160deg, #0228dd, #0670f3, #229df9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  margin-top: 60px;
+  padding: 0 6px;
+}
+
+.page-menu.page-menu--taste {
+  background-color: #fdfffd;
+}
+
+.page-menu.page-menu--taste > h1 {
+  font-family: "Kaushan Script", cursive;
+  background: -webkit-linear-gradient(290deg, #45993e, #8dd565, #acef75);
+  background: -o-linear-gradient(290deg, #45993e, #8dd565, #acef75);
+  background: linear-gradient(160deg, #45993e, #8dd565, #acef75);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  margin-top: 60px;
+  padding: 0 6px;
+}
+
+.page-menu.page-menu--legal {
+  font-family: "montserrat", sans-serif;
+  background-color: #e6e0e0;
+  padding: 20px;
+}
+
+.page-menu.page-menu--legal > h1 {
+  font-size: 3.5rem;
+  margin-top: 60px;
 }
 
 /* preview */
