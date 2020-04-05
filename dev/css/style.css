@@ -87,7 +87,7 @@
 @font-face {
   font-family: "Segoe Print";
   font-style: bold;
-  font-weight: normal;
+  font-weight: 700;
   src: url("fonts/SegoePrint-Bold.eot");
   src: url("fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint-Bold.woff") format("woff"), url("fonts/SegoePrint-Bold.ttf") format("truetype"), url("fonts/SegoePrint-Bold.svg?#webfont") format("svg");
 }
@@ -239,7 +239,7 @@ header, footer, button, section, a, main, main h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin: 0 auto;
 }
 
@@ -311,12 +311,18 @@ header, footer, button, section, a, main, main h1 {
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   font-family: "Segoe Print", cursive;
+  font-weight: normal;
 }
 
 .page-menu__heading {
   width: 80%;
-  margin: 0 auto 40px;
-  font-size: 1.3rem;
+  margin: 0 60px 40px;
+  font-size: 1.2rem;
+}
+
+.page-menu__heading > h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .page-menu__heading > div {
@@ -326,37 +332,18 @@ header, footer, button, section, a, main, main h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.page-menu__heading > h2 {
-  text-align: center;
+.page-menu__heading > div > p:last-child {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-.page-menu__heading.page-menu__heading--orange {
-  font-family: "Lusitana", serif;
-  color: #c67412;
-}
-
-.page-menu__heading.page-menu__heading--orange > h2 {
-  font-family: "Source Serif Pro", serif;
-}
-
-.page-menu__heading.page-menu__heading--purple {
-  font-family: "Lusitana", serif;
-  color: #a56799;
-}
-
-.page-menu__heading.page-menu__heading--purple > h2 {
-  font-family: "Source Serif Pro", serif;
-}
-
-.page-menu__heading.page-menu__heading--blue {
-  font-family: "Lusitana", serif;
-  color: #6e4ccc;
-}
-
-.page-menu__heading.page-menu__heading--blue > h2 {
-  font-family: "Source Serif Pro", serif;
+.page-menu__heading > div > p {
+  margin: 7.5px 0;
 }
 
 .page-menu.page-menu--note {
@@ -382,7 +369,19 @@ header, footer, button, section, a, main, main h1 {
   margin-top: 0;
 }
 
-.page-menu__subtitle {
+.page-menu__heading.page-menu__heading--note > h2::before {
+  content: url("img/line-left-note1.svg");
+  position: relative;
+  top: 15px;
+}
+
+.page-menu__heading.page-menu__heading--note > h2::after {
+  content: url("img/line-right-note1.svg");
+  position: relative;
+  top: 15px;
+}
+
+.page-menu__heading.page-menu__heading--note__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +391,7 @@ header, footer, button, section, a, main, main h1 {
   margin: 10px auto 50px;
 }
 
-.page-menu__subtitle > p {
+.page-menu__heading.page-menu__heading--note__subtitle > p {
   background: -webkit-gradient(linear, left top, right top, from(#f15861), color-stop(#f16062), to(#f6916a));
   background: -webkit-linear-gradient(left, #f15861, #f16062, #f6916a);
   background: -o-linear-gradient(left, #f15861, #f16062, #f6916a);
@@ -405,17 +404,17 @@ header, footer, button, section, a, main, main h1 {
   line-height: 3rem;
 }
 
-.page-menu__subtitle > h2 {
+.page-menu__heading.page-menu__heading--note__subtitle > h2 {
   font-family: "Devonshire", cursive;
   font-size: 3rem;
   margin: 0;
 }
 
-.page-menu.page-menu--french {
+.page-menu.page-menu-french {
   background-color: #fff5fe;
 }
 
-.page-menu.page-menu--french > h1 {
+.page-menu.page-menu-french > h1 {
   font-family: "Croissant One", serif;
   background: -webkit-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
   background: -o-linear-gradient(290deg, #c67412, #a56799, #6e4ccc);
@@ -425,6 +424,27 @@ header, footer, button, section, a, main, main h1 {
   color: transparent;
   font-size: 2.5rem;
   margin-top: 60px;
+}
+
+.page-menu__heading.page-menu__heading--french {
+  font-family: "Lusitana", serif;
+  color: #6e4ccc;
+}
+
+.page-menu__heading.page-menu__heading--french > h2 {
+  font-family: "Source Serif Pro", serif;
+}
+
+.page-menu__heading.page-menu__heading--french > h2::before {
+  content: url("img/line-left-french.png");
+  position: relative;
+  top: 15px;
+}
+
+.page-menu__heading.page-menu__heading--french > h2::after {
+  content: url("img/line-right-french.png");
+  position: relative;
+  top: 15px;
 }
 
 .page-menu.page-menu--delice {
@@ -444,6 +464,18 @@ header, footer, button, section, a, main, main h1 {
   padding: 0 6px;
 }
 
+.page-menu__heading.page-menu__heading--delice > h2::before {
+  content: url("img/line-left-delice.png");
+  position: relative;
+  top: 15px;
+}
+
+.page-menu__heading.page-menu__heading--delice > h2::after {
+  content: url("img/line-right-delice.png");
+  position: relative;
+  top: 15px;
+}
+
 .page-menu.page-menu--taste {
   background-color: #fdfffd;
 }
@@ -459,6 +491,18 @@ header, footer, button, section, a, main, main h1 {
   font-size: 3.5rem;
   margin-top: 60px;
   padding: 0 6px;
+}
+
+.page-menu__heading.page-menu__heading--taste > h2::before {
+  content: url("img/line-left-taste.png");
+  position: relative;
+  top: 15px;
+}
+
+.page-menu__heading.page-menu__heading--taste > h2::after {
+  content: url("img/line-right-taste.png");
+  position: relative;
+  top: 15px;
 }
 
 .page-menu.page-menu--legal {

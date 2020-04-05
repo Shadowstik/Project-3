@@ -48,7 +48,7 @@
 
 @include font-face(Segoe Print, SegoePrint, normal, 400);
 
-@include font-face(Segoe Print, SegoePrint-Bold, bold, normal);
+@include font-face(Segoe Print, SegoePrint-Bold, bold, 700);
 
 
 /* header et footer */
@@ -199,7 +199,7 @@ $green-light: #acef75;
             &> h2{
                 font-family: "Croissant One", serif;
                 @include text-gradient(160deg, $orange-french, $purple-french, $blue-french);
-                font-size: 2.2rem;
+                font-size: 2rem;
                 margin: 0 auto;
             }
         }
@@ -251,41 +251,32 @@ $green-light: #acef75;
     align-items: center;
     @include menu-shadow;
     font-family: "Segoe Print", cursive;
+    font-weight: normal;
     &__heading{
         width: 80%;
-        margin: 0 auto 40px;
-        font-size: 1.3rem;
+        margin: 0 60px 40px;
+        font-size: 1.2rem;
+        &> h2{
+            text-align: center;
+            font-size: 2rem;
+        }
         &> div{
             display: flex;
             justify-content: space-between;
-        } 
-        &> h2{
-            text-align: center;
-        }
-        &.page-menu__heading--orange{
-            font-family: "Lusitana", serif;
-            color: $orange-french;
-            &> h2{
-                font-family: "Source Serif Pro", serif;
-            }    
-        }
-        &.page-menu__heading--purple{
-            font-family: "Lusitana", serif;
-            color: $purple-french;
-            &> h2{
-                font-family: "Source Serif Pro", serif;
+            align-items: baseline;
+            &> p:last-child{
+                font-weight: 700;
+                font-size: 1.5rem;
             }
-        }
-        &.page-menu__heading--blue{
-            font-family: "Lusitana", serif;
-            color: $blue-french;
-            &> h2{
-                font-family: "Source Serif Pro", serif;
+            &> p{
+                margin: 7.5px 0;
             }
-        } 
+        }       
     }
-    &.page-menu--note{
-        background-color: $bg-note;
+}
+
+.page-menu.page-menu--note{
+    background-color: $bg-note;
         &> h3{
             @include text-gradient(to right, $magenta, $middle, $orange);
             font-size: 5rem;
@@ -296,9 +287,20 @@ $green-light: #acef75;
             font-family: "Devonshire", cursive;
             font-size: 3.5rem;
             margin-top: 0;
-            
         }
-    }  
+}
+
+.page-menu__heading.page-menu__heading--note{
+    &> h2::before{
+        content: url("img/line-left-note1.svg");
+        position: relative;
+        top: 15px;
+    }
+    &> h2::after{
+        content: url("img/line-right-note1.svg");
+        position: relative;
+        top: 15px;
+    }
     &__subtitle{
         display: flex;
         align-items: center;
@@ -313,10 +315,11 @@ $green-light: #acef75;
             font-family: "Devonshire", cursive;
             font-size: 3rem;
             margin: 0;
-            
         }
     }
-    &.page-menu--french{
+}
+
+.page-menu.page-menu-french{
         background-color: $bg-french;
         &> h1{
             font-family: "Croissant One", serif;
@@ -324,28 +327,75 @@ $green-light: #acef75;
             font-size: 2.5rem;
             margin-top: 60px;
         }
-    }
-    &.page-menu--delice{
-        background-color: $bg-delice;
-        &> h1{
-            font-family: "Dancing Script", cursive;
-            @include text-gradient(160deg, $blue-night, $blue-medium, $blue-light);
-            font-size: 3.5rem;
-            margin-top: 60px;
-            padding: 0 6px;
+}
+
+.page-menu__heading.page-menu__heading--french{
+    font-family: "Lusitana", serif;
+    color: $blue-french;
+        &> h2{
+            font-family: "Source Serif Pro", serif;
         }
-    }
-    &.page-menu--taste{
-        background-color: $bg-taste;
-        &> h1{
-            font-family: "Kaushan Script", cursive;
-            @include text-gradient(160deg, $green, $green-medium, $green-light);
-            font-size: 3.5rem;
-            margin-top: 60px;
-            padding: 0 6px;
+        &> h2::before{
+            content: url("img/line-left-french.png");
+            position: relative;
+            top: 15px;
         }
+        &> h2::after{
+            content: url("img/line-right-french.png");
+            position: relative;
+            top: 15px;
+        }
+}
+
+.page-menu.page-menu--delice{
+    background-color: $bg-delice;
+    &> h1{
+        font-family: "Dancing Script", cursive;
+        @include text-gradient(160deg, $blue-night, $blue-medium, $blue-light);
+        font-size: 3.5rem;
+        margin-top: 60px;
+        padding: 0 6px;
     }
-    &.page-menu--legal{
+}
+
+.page-menu__heading.page-menu__heading--delice{
+        &> h2::before{
+            content: url("img/line-left-delice.png");
+            position: relative;
+            top: 15px;
+        }
+        &> h2::after{
+            content: url("img/line-right-delice.png");
+            position: relative;
+            top: 15px;
+        }
+}
+
+.page-menu.page-menu--taste{
+    background-color: $bg-taste;
+    &> h1{
+        font-family: "Kaushan Script", cursive;
+        @include text-gradient(160deg, $green, $green-medium, $green-light);
+        font-size: 3.5rem;
+        margin-top: 60px;
+        padding: 0 6px;
+    }
+}
+
+.page-menu__heading.page-menu__heading--taste{
+        &> h2::before{
+            content: url("img/line-left-taste.png");
+            position: relative;
+            top: 15px;
+        }
+        &> h2::after{
+            content: url("img/line-right-taste.png");
+            position: relative;
+            top: 15px;
+        }
+}
+    
+.page-menu.page-menu--legal{
         font-family: "montserrat", sans-serif;
         background-color: #e6e0e0;
         padding: 20px;
@@ -353,13 +403,7 @@ $green-light: #acef75;
             font-size: 3.5rem;
             margin-top: 60px;
         }
-    }
 }
-    
-          
-
-
-
 
 /* preview */
 
