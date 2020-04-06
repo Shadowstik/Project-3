@@ -1,11 +1,9 @@
 @charset "UTF-8";
-* {
+*, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
   margin: 0;
+  padding: 0;
 }
 
 /* police header et footer*/
@@ -102,20 +100,9 @@ body {
 /* menu 2*/
 /* menu 3*/
 /* menu 4*/
-/*@mixin fonts-cursive($cursive){
-    font-family: "montserrat", sans-serif;
-    font-family: "Croissant One", serif;
-    font-family: "Cantata One", serif;
-    font-family: "Crimson Text", serif;
-    font-family: "Devonshire", cursive;
-    font-family: "Segoe Print", cursive;
-    font-family: "Dancing Script", cursive;
-    font-family: "Kaushan Script", cursive;  
-}*/
 /*%structure, header, footer, button, section, a, main, main h1{
     border: 2px solid red;
-}
-
+}*/
 /* header */
 .header {
   width: 100%;
@@ -327,6 +314,7 @@ body {
 .page-menu__heading > h2 {
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .page-menu__heading > div {
@@ -352,6 +340,7 @@ body {
 /* menus-note */
 .page-menu.page-menu--note {
   background-color: #fcdfdb;
+  padding: 40px 0;
 }
 
 .page-menu.page-menu--note > h3 {
@@ -370,7 +359,7 @@ body {
 .page-menu.page-menu--note > h1 {
   font-family: "Devonshire", cursive;
   font-size: 3.5rem;
-  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .page-menu__heading.page-menu__heading--note > h2 {
@@ -379,7 +368,7 @@ body {
 
 .page-menu__heading.page-menu__heading--note > div {
   font-size: 1.2rem;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .page-menu__heading.page-menu__heading--note:nth-child(3) > h2::before {
@@ -415,7 +404,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .page-menu__heading.page-menu__heading--note:nth-child(5) > div > p:last-child {
@@ -467,8 +456,8 @@ body {
 
 /* menus-french */
 .page-menu.page-menu--french {
-  padding: 40px 0;
   background-color: #fff5fe;
+  padding: 50px 0;
 }
 
 .page-menu.page-menu--french > h1 {
@@ -480,7 +469,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2.5rem;
-  margin-top: 60px auto;
+  margin: 80px auto;
 }
 
 .page-menu__heading.page-menu__heading--french {
@@ -566,6 +555,7 @@ body {
 /* menus-delice */
 .page-menu.page-menu--delice {
   background-color: #edefef;
+  padding: 40px 0;
 }
 
 .page-menu.page-menu--delice > h1 {
@@ -577,7 +567,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 5rem;
-  margin-top: 60px;
+  margin: 80px auto;
   padding: 15px;
 }
 
@@ -639,6 +629,7 @@ body {
 /* menus-taste */
 .page-menu.page-menu--taste {
   background-color: #fdfffd;
+  padding: 40px 0;
 }
 
 .page-menu.page-menu--taste > h1 {
@@ -650,7 +641,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 5rem;
-  margin-top: 60px;
+  margin: 80px auto;
   padding: 15px;
 }
 
@@ -709,12 +700,12 @@ body {
 .page-menu.page-menu--legal {
   font-family: "montserrat", sans-serif;
   background-color: #e6e0e0;
-  padding: 20px;
+  padding: 40px 0;
 }
 
 .page-menu.page-menu--legal > h1 {
   font-size: 3.5rem;
-  margin-top: 60px;
+  margin: 80px auto;
 }
 
 /* preview */

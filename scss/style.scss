@@ -1,9 +1,7 @@
-*{
+*, ::before, ::after{
     box-sizing: border-box;
-}
-
-body{
     margin: 0;
+    padding: 0;
 }
 
 @mixin font-face($name, $file, $style, $weight) {
@@ -111,20 +109,9 @@ $green-light: #acef75;
     color: transparent;
 }
 
-/*@mixin fonts-cursive($cursive){
-    font-family: "montserrat", sans-serif;
-    font-family: "Croissant One", serif;
-    font-family: "Cantata One", serif;
-    font-family: "Crimson Text", serif;
-    font-family: "Devonshire", cursive;
-    font-family: "Segoe Print", cursive;
-    font-family: "Dancing Script", cursive;
-    font-family: "Kaushan Script", cursive;  
-}*/
-
 /*%structure, header, footer, button, section, a, main, main h1{
     border: 2px solid red;
-}
+}*/
 
 /* header */
 
@@ -263,6 +250,7 @@ $green-light: #acef75;
         &> h2{
             text-align: center;
             font-size: 1.5rem;
+            margin-bottom: 20px;
         }
         &> div{
             display: flex;
@@ -281,6 +269,7 @@ $green-light: #acef75;
 /* menus-note */
 .page-menu.page-menu--note{
     background-color: $bg-note;
+    padding: 40px 0;
     &> h3{
         @include text-gradient(to right, $magenta, $middle, $orange);
         font-size: 5rem;
@@ -290,7 +279,7 @@ $green-light: #acef75;
     &> h1{
         font-family: "Devonshire", cursive;
         font-size: 3.5rem;
-        margin-top: 0;
+        margin-bottom: 50px;
     }
 }
 
@@ -300,7 +289,7 @@ $green-light: #acef75;
     }
     &> div{
         font-size: 1.2rem;
-        margin: 0 10px;
+        margin: 0 20px;
     }
     &:nth-child(3){
         &> h2::before{
@@ -333,7 +322,7 @@ $green-light: #acef75;
     &:nth-child(5){
         &> div{
             flex-direction: column;
-            margin: 0 10px;
+            margin: 0 20px;
             &> p:last-child{
                 font-size: 1.2rem;
             }
@@ -372,13 +361,13 @@ $green-light: #acef75;
 
 /* menus-french */
 .page-menu.page-menu--french{
-    padding: 40px 0;
     background-color: $bg-french;
+    padding: 50px 0;
         &> h1{
             font-family: "Croissant One", serif;
             @include text-gradient(160deg, $orange-french, $purple-french, $blue-french);
             font-size: 2.5rem;
-            margin-top: 60px auto;
+            margin: 80px auto;
         }
 }
 
@@ -450,11 +439,12 @@ $green-light: #acef75;
 /* menus-delice */
 .page-menu.page-menu--delice{
     background-color: $bg-delice;
+    padding: 40px 0;
     &> h1{
         font-family: "Dancing Script", cursive;
         @include text-gradient(160deg, $blue-night, $blue-medium, $blue-light);
         font-size: 5rem;
-        margin-top: 60px;
+        margin: 80px auto;
         padding: 15px;
     }
 }
@@ -515,11 +505,12 @@ $green-light: #acef75;
 /* menus-taste */
 .page-menu.page-menu--taste{
     background-color: $bg-taste;
+    padding: 40px 0;
     &> h1{
         font-family: "Kaushan Script", cursive;
         @include text-gradient(160deg, $green, $green-medium, $green-light);
         font-size: 5rem;
-        margin-top: 60px;
+        margin: 80px auto;
         padding: 15px;
     }
 }
@@ -580,10 +571,10 @@ $green-light: #acef75;
 .page-menu.page-menu--legal{
     font-family: "montserrat", sans-serif;
     background-color: #e6e0e0;
-    padding: 20px;
+    padding: 40px 0;
     &> h1{
         font-size: 3.5rem;
-        margin-top: 60px;
+        margin: 80px auto;
     }       
 }
 
