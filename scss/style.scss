@@ -1,7 +1,11 @@
 *, ::before, ::after{
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+body{
+    box-sizing: border-box;
 }
 
 /* polices */
@@ -167,11 +171,11 @@ $bg-legal: #e6e0e0;
     &.main-menu--note{
         @include box-menu($bg-note);
         color: $black-note;
-        &> h2{
+        & h2{
             @include brand-note;
             font-size: 3rem;
             margin: 0 auto;
-            &>  span{
+            & span{
                 @include brand-note-logo;
                 font-size: 4.5rem;
             }
@@ -181,7 +185,7 @@ $bg-legal: #e6e0e0;
         @include box-menu($bg-french);
         font-family: "Source Serif Pro", serif;
         color:$orange-french;
-        &> h2{
+        & h2{
             @include brand-french;
             font-size: 2rem;
             margin: 20px auto;
@@ -190,7 +194,7 @@ $bg-legal: #e6e0e0;
     &.main-menu--delice{
         @include box-menu($bg-delice);
         color: $blue-light;
-        &> h2{
+        & h2{
             @include brand-delice;
             font-size: 3rem;
             margin: 0 auto;
@@ -200,7 +204,7 @@ $bg-legal: #e6e0e0;
     &.main-menu--taste{
         @include box-menu($bg-taste);
         color: $green-light;
-        &> h2{
+        & h2{
             @include brand-taste;
             font-size: 3rem;
             margin: 0 auto;
@@ -208,7 +212,6 @@ $bg-legal: #e6e0e0;
         }
     }
 }    
-
 
 /* all pages */
 
@@ -230,17 +233,16 @@ $bg-legal: #e6e0e0;
     font-family: "Segoe Print", cursive;
     font-weight: normal;
     &__heading{
-        width: 80%;
+        width: 85%;
         margin: 0 0 40px;
         font-size: 1.1rem;
-        &> h2{
+        & h2{
             text-align: center;
             font-size: 1.5rem;
         }
-        &> div{
+        & div{
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
             &> p:last-child{
                 font-size: 1.5rem;
             } 
@@ -255,30 +257,33 @@ div, p{
 /* menus-note */
 .page-menu.page-menu--note{
     @include box-menu($bg-note);
-    &>  :first-child{
-        @include brand-note-logo;
-        font-size: 5rem;
-        margin: 40px auto 0;
-        line-height: 5rem;
-    }
-    &> h1{
+    & h1{
         @include brand-note;
         font-size: 3.5rem;
-        margin-bottom: 50px;
+        margin: 50px auto;
+        text-align: center;
+        line-height: 3.5rem;
+        & span{
+            @include brand-note-logo;
+            font-size: 6rem;
+        }
     }
 }
 
 .page-menu__heading.page-menu__heading--note{
     color: $black-note;
-    &> h2{
+    width: 75%;
+    & h2{
         font-size: 1.7rem;
     }
-    &> div{
+    & div{
         font-size: 1.2rem;
+        align-items: center;
     }   
-    &:nth-child(5){
+    &:nth-child(4){
         &> div:last-child{
             flex-direction: column;
+            align-items: start;
             &> p:last-child{
                 font-size: 1.2rem;
             }
@@ -290,12 +295,12 @@ div, p{
     display: flex;
     align-items: center;
     margin: 10px auto 50px;    
-    &> h2{
-    @include brand-note;
-    font-size: 3rem;
-    margin: 0;
+    & h2{
+        @include brand-note;
+        font-size: 3rem;
+        margin: 0;
     }
-    &> p{
+    & p{
         @include brand-note-logo;
         font-size: 3.5rem;
         margin: 0 10px;
@@ -306,7 +311,7 @@ div, p{
 .page-menu.page-menu--french{
     @include box-menu($bg-french);
     padding: 40px 0;
-    &> h1{
+    & h1{
         @include brand-french;
         font-size: 2.5rem;
         margin: 80px auto;
@@ -316,15 +321,16 @@ div, p{
 .page-menu__heading.page-menu__heading--french{
     font-size: 1.3rem;
     font-family: "Lusitana", serif;
-    &> div{
-        margin: 0 90px;
+    & div{
+        margin: 0 120px;
+        align-items: top;
         &:first-child{
-            margin: 0 0 20px;
-            &> h2{
+            margin: 30px 0;
+            & h2{
                 font-family: "Source Serif Pro", serif;
                 font-size: 1.45rem;
             }
-            &> img:first-child{
+            & img:first-child{
                 transform: scalex(-1);
             }   
         }
@@ -337,9 +343,9 @@ div, p{
     }
     &:nth-child(4){
         color: $blue-french;
-        &> div:last-child{
+        & div:last-child{
             flex-direction: column;
-            &> p:last-child{
+            & p:last-child{
                 font-size: 1.3rem;
             }
         }
@@ -350,7 +356,7 @@ div, p{
 .page-menu.page-menu--delice{
     @include box-menu($bg-delice);
     padding: 40px 0;
-    &> h1{
+    & h1{
         @include brand-delice;
         font-size: 4.5rem;
         margin: 80px auto;
@@ -360,27 +366,26 @@ div, p{
 
 .page-menu__heading.page-menu__heading--delice{
     font-size: 1.2rem;
-    &> div{
-        margin: 0 50px;
-        &:first-child{
-            margin: 0;
-            &> h2{
-                font-weight: normal;
-                font-size: 1.5rem;
-            }   
-        }
-        &> img:first-child{
+    & div{
+        margin: 0 80px;
+        & img:first-child{
             transform: scalex(-1);
         } 
-    }
-     
+        &:first-child{
+            margin: 0;
+            & h2{
+                font-weight: normal;
+                font-size: 1.4rem;
+            }   
+        } 
+    }   
 }
 
 /* menus-taste */
 .page-menu.page-menu--taste{
     @include box-menu($bg-taste);
     padding: 40px 0;
-    &> h1{
+    & h1{
         @include brand-taste;
         font-size: 4.5rem;
         margin: 80px auto;
@@ -389,66 +394,20 @@ div, p{
 }
 
 .page-menu__heading.page-menu__heading--taste{
-    &> div{
+    font-size: 1.2rem;
+    & div{
         margin: 0 60px;
-    }
-    &> h2{
-        font-weight: normal;
-        font-size: 1.5rem;
-    }
-    &:nth-child(2){
-        &> h2::before{
-            content: url("img/line-left-taste_.svg");
-            position: relative;
-            left: -145px;
-            top: 5px;
-        }
-        &> h2::after{
-            content: url("img/line-right-taste_.svg");
-            position: relative;
-            right: -140px;
-            top: 5px;
-        }
-    }
-    &:nth-child(3){
-        &> h2::before{
-            content: url("img/line-left-taste_.svg");
-            position: relative;
-            left: -85px;
-            top: 10px;
-        }
-        &> h2::after{
-            content: url("img/line-right-taste_.svg");
-            position: relative;
-            right: -80px;
-            top: 5px;
-        }
-    }    
-    &:nth-child(4){
-        &> h2::before{
-            content: url("img/line-left-taste_.svg");
-            position: relative;
-            left: -75px;
-            top: 10px;
-        }
-        &> h2::after{
-
-            content: url("img/line-right-taste_.svg");
-            position: relative;
-            right: -70px;
-            top: 5px;
-        }
-    }     
-}
- 
-/* mentions-légales */
-.page-menu.page-menu--legal{
-    @include box-menu($bg-legal);
-    padding: 40px 0;
-    &> h1{
-        font-size: 3.5rem;
-        margin: 80px auto;
-    }       
+        & img:first-child{
+            transform: scalex(-1);
+        } 
+        &:first-child{
+            margin: 0;
+            & h2{
+                font-weight: normal;
+                font-size: 1.4rem;
+            }   
+        } 
+    }   
 }
 
 /* preview */
