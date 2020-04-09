@@ -119,9 +119,6 @@
   font-size: 4.5rem;
   font-weight: bold;
   letter-spacing: -3px;
-}
-
-.header__heading > a {
   text-decoration: none;
   color: #FACA44;
 }
@@ -167,12 +164,12 @@
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #fcdfdb;
-  color: #000;
+  color: #3d1319;
 }
 
 .main-menu.main-menu--note > h2 {
   font-family: "Devonshire", cursive;
-  color: #000;
+  color: #3d1319;
   font-size: 3rem;
   margin: 0 auto;
 }
@@ -285,7 +282,6 @@
 .page-menu__heading > h2 {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 
 .page-menu__heading > div {
@@ -302,6 +298,10 @@
 
 .page-menu__heading > div > p:last-child {
   font-size: 1.5rem;
+}
+
+div, p {
+  border: 1px solid red;
 }
 
 /* menus-note */
@@ -326,9 +326,13 @@
 
 .page-menu.page-menu--note > h1 {
   font-family: "Devonshire", cursive;
-  color: #000;
+  color: #3d1319;
   font-size: 3.5rem;
   margin-bottom: 50px;
+}
+
+.page-menu__heading.page-menu__heading--note {
+  color: #3d1319;
 }
 
 .page-menu__heading.page-menu__heading--note > h2 {
@@ -337,61 +341,17 @@
 
 .page-menu__heading.page-menu__heading--note > div {
   font-size: 1.2rem;
-  margin: 0 20px;
 }
 
-.page-menu__heading.page-menu__heading--note:nth-child(3) > h2::before {
-  content: url("img/line-left-note_.svg");
-  position: relative;
-  top: 10px;
-  left: -115px;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(3) > h2::after {
-  content: url("img/line-right-note_.svg");
-  position: relative;
-  top: 10px;
-  right: -100px;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(4) > h2::before {
-  content: url("img/line-left-note_.svg");
-  position: relative;
-  top: 10px;
-  left: -70px;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(4) > h2::after {
-  content: url("img/line-right-note_.svg");
-  position: relative;
-  top: 10px;
-  right: -55px;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(5) > div {
+.page-menu__heading.page-menu__heading--note:nth-child(5) > div:last-child {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 20px;
 }
 
-.page-menu__heading.page-menu__heading--note:nth-child(5) > div > p:last-child {
+.page-menu__heading.page-menu__heading--note:nth-child(5) > div:last-child > p:last-child {
   font-size: 1.2rem;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(5) > h2::before {
-  content: url("img/line-left-note_.svg");
-  position: relative;
-  top: 10px;
-  left: -40px;
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(5) > h2::after {
-  content: url("img/line-right-note_.svg");
-  position: relative;
-  top: 10px;
-  right: -30px;
 }
 
 .page-menu__subtitle {
@@ -406,7 +366,7 @@
 
 .page-menu__subtitle > h2 {
   font-family: "Devonshire", cursive;
-  color: #000;
+  color: #3d1319;
   font-size: 3rem;
   margin: 0;
 }
@@ -452,75 +412,42 @@
   margin: 0 90px;
 }
 
-.page-menu__heading.page-menu__heading--french > h2 {
+.page-menu__heading.page-menu__heading--french > div:first-child {
+  margin: 0 0 20px;
+}
+
+.page-menu__heading.page-menu__heading--french > div:first-child > h2 {
   font-family: "Source Serif Pro", serif;
   font-size: 1.45rem;
+}
+
+.page-menu__heading.page-menu__heading--french > div:first-child > img:first-child {
+  -webkit-transform: scalex(-1);
+      -ms-transform: scalex(-1);
+          transform: scalex(-1);
 }
 
 .page-menu__heading.page-menu__heading--french:nth-child(2) {
   color: #c67412;
 }
 
-.page-menu__heading.page-menu__heading--french:nth-child(2) > h2::before {
-  content: url("img/line-left-french_.svg");
-  position: relative;
-  top: 5px;
-  left: -20px;
-}
-
-.page-menu__heading.page-menu__heading--french:nth-child(2) > h2::after {
-  content: url("img/line-right-french_.svg");
-  position: relative;
-  top: 5px;
-  right: -20px;
-}
-
 .page-menu__heading.page-menu__heading--french:nth-child(3) {
   color: #a56799;
-}
-
-.page-menu__heading.page-menu__heading--french:nth-child(3) > h2::before {
-  content: url("img/line-left-french2_.svg");
-  position: relative;
-  top: 5px;
-  left: -50px;
-}
-
-.page-menu__heading.page-menu__heading--french:nth-child(3) > h2::after {
-  content: url("img/line-right-french2_.svg");
-  position: relative;
-  top: 5px;
-  right: -50px;
 }
 
 .page-menu__heading.page-menu__heading--french:nth-child(4) {
   color: #6e4ccc;
 }
 
-.page-menu__heading.page-menu__heading--french:nth-child(4) > div {
+.page-menu__heading.page-menu__heading--french:nth-child(4) > div:last-child {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-weight: normal;
 }
 
-.page-menu__heading.page-menu__heading--french:nth-child(4) > div > p:last-child {
+.page-menu__heading.page-menu__heading--french:nth-child(4) > div:last-child > p:last-child {
   font-size: 1.3rem;
-}
-
-.page-menu__heading.page-menu__heading--french:nth-child(4) > h2::before {
-  content: url("img/line-left-french3_.svg");
-  position: relative;
-  top: 5px;
-  left: -30px;
-}
-
-.page-menu__heading.page-menu__heading--french:nth-child(4) > h2::after {
-  content: url("img/line-right-french3_.svg");
-  position: relative;
-  top: 5px;
-  right: -30px;
 }
 
 /* menus-delice */
@@ -552,51 +479,19 @@
   margin: 0 50px;
 }
 
-.page-menu__heading.page-menu__heading--delice > h2 {
+.page-menu__heading.page-menu__heading--delice > div:first-child {
+  margin: 0;
+}
+
+.page-menu__heading.page-menu__heading--delice > div:first-child > h2 {
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
-.page-menu__heading.page-menu__heading--delice:nth-child(2) > h2::before {
-  content: url("img/line-left-delice_.svg");
-  position: relative;
-  left: -10px;
-  top: 5px;
-}
-
-.page-menu__heading.page-menu__heading--delice:nth-child(2) > h2::after {
-  content: url("img/line-right-delice_.svg");
-  position: relative;
-  right: -25px;
-  top: 7.5px;
-}
-
-.page-menu__heading.page-menu__heading--delice:nth-child(3) > h2::before {
-  content: url("img/line-left-delice2_.svg");
-  position: relative;
-  left: -20px;
-  top: 10px;
-}
-
-.page-menu__heading.page-menu__heading--delice:nth-child(3) > h2::after {
-  content: url("img/line-right-delice2_.svg");
-  position: relative;
-  right: -20px;
-  top: 5px;
-}
-
-.page-menu__heading.page-menu__heading--delice:nth-child(4) > h2::before {
-  content: url("img/line-left-delice3_.svg");
-  position: relative;
-  left: -30px;
-  top: 10px;
-}
-
-.page-menu__heading.page-menu__heading--delice:nth-child(4) > h2::after {
-  content: url("img/line-right-delice3_.svg");
-  position: relative;
-  right: -30px;
-  top: 7.5px;
+.page-menu__heading.page-menu__heading--delice > div > img:first-child {
+  -webkit-transform: scalex(-1);
+      -ms-transform: scalex(-1);
+          transform: scalex(-1);
 }
 
 /* menus-taste */
