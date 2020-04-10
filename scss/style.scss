@@ -6,8 +6,11 @@
 @import "utils/variables";
 @import "utils/mixins";
 
+@import "components/button";
+
 @import "layout/header";
 @import "layout/footer";
+@import "layout/page-menu";
 
 @import "pages/main-menu";
 @import "pages/note";
@@ -22,9 +25,9 @@
     border: 2px solid red;
 }*/
 
-div, p{
+/*div, p{
     border: 1px solid red;
-}
+}*/
 
 
 

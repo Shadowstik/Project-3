@@ -1,0 +1,13 @@
+.page-menu.page-menu--legal{
+    @include box-menu($bg-legal);
+    font-family: "montserrat", sans-serif;
+    padding: 40px 0;
+    & h1{
+        font-size: 4rem;
+        margin: 40px auto;
+        padding: 15px;
+    }
+    & h2{
+        margin: 20px;
+    }
+}

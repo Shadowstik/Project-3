@@ -9,6 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main-menu{
@@ -23,6 +27,9 @@
     text-decoration: none; 
     font-size: 3rem;
     font-family: "Segoe Print", cursive;
+    @media screen and (max-width: 960px) {
+        width: 55%;
+    }
     &.main-menu--note{
         @include box-menu($bg-note);
         color: $black-note;
@@ -69,42 +76,3 @@
     }
 }    
 
-.page-menu{
-    width: 80%;
-    color: $color-menu;
-    margin: 40px auto 100px;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Segoe Print", cursive;
-    font-weight: normal;
-    &__heading{
-        width: 85%;
-        margin: 0 0 40px;
-        font-size: 1.1rem;
-        & h2{
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        & div{
-            display: flex;
-            justify-content: space-between;
-            &> p:last-child{
-                font-size: 1.5rem;
-            } 
-        }       
-    }
-}
-
-.btn{
-    @include primary-theme;
-    width: 35%;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 10px 0;
-    &__heading{
-        font-size: 2.5rem;
-        font-weight: normal;
-    }
-}
