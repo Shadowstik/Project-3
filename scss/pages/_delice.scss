@@ -1,0 +1,27 @@
+.page-menu.page-menu--delice{
+    @include box-menu($bg-delice);
+    padding: 40px 0;
+    & h1{
+        @include brand-delice;
+        font-size: 4.5rem;
+        margin: 80px auto;
+        padding: 15px;
+    }
+}
+
+.page-menu__heading.page-menu__heading--delice{
+    font-size: 1.2rem;
+    & div{
+        margin: 0 80px;
+        & img:first-child{
+            transform: scalex(-1);
+        } 
+        &:first-child{
+            margin: 0;
+            & h2{
+                font-weight: normal;
+                font-size: 1.4rem;
+            }   
+        } 
+    }   
+}

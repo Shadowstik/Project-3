@@ -1,0 +1,27 @@
+.page-menu.page-menu--taste{
+    @include box-menu($bg-taste);
+    padding: 40px 0;
+    & h1{
+        @include brand-taste;
+        font-size: 4.5rem;
+        margin: 80px auto;
+        padding: 15px;
+    }
+}
+
+.page-menu__heading.page-menu__heading--taste{
+    font-size: 1.2rem;
+    & div{
+        margin: 0 60px;
+        & img:first-child{
+            transform: scalex(-1);
+        } 
+        &:first-child{
+            margin: 0;
+            & h2{
+                font-weight: normal;
+                font-size: 1.4rem;
+            }   
+        } 
+    }   
+}

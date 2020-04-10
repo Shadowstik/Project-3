@@ -1,0 +1,43 @@
+.page-menu.page-menu--french{
+    @include box-menu($bg-french);
+    padding: 40px 0;
+    & h1{
+        @include brand-french;
+        font-size: 2.5rem;
+        margin: 80px auto;
+    }   
+}
+
+.page-menu__heading.page-menu__heading--french{
+    font-size: 1.3rem;
+    font-family: "Lusitana", serif;
+    & div{
+        margin: 0 120px;
+        align-items: top;
+        &:first-child{
+            margin: 30px 0;
+            & h2{
+                font-family: "Source Serif Pro", serif;
+                font-size: 1.45rem;
+            }
+            & img:first-child{
+                transform: scalex(-1);
+            }   
+        }
+    }
+    &:nth-child(2){
+        color: $orange-french;
+    }
+    &:nth-child(3){
+        color: $purple-french;
+    }
+    &:nth-child(4){
+        color: $blue-french;
+        & div:last-child{
+            flex-direction: column;
+            & p:last-child{
+                font-size: 1.3rem;
+            }
+        }
+    }  
+}

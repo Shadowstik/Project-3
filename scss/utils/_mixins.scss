@@ -1,0 +1,52 @@
+@mixin primary-theme{
+    background-color: $bg-primary;
+    color: $color-primary;
+    font-family: "montserrat", sans-serif;
+}
+
+@mixin box-menu($bg){
+    box-shadow: 0 0 20px $color-shadow, 0 0 20px $color-shadow, 0 0 20px $color-shadow;
+    background: $bg;
+}
+
+@mixin heading-title{
+    color: $color-menu;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+}
+
+@mixin brand-note{
+    font-family: "Devonshire", cursive;
+    color: $black-note;
+}
+
+@mixin brand-note-logo{
+    background: linear-gradient(to right, $magenta, $middle, $orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin brand-french{
+    font-family: "Croissant One", serif;
+    background: linear-gradient(160deg, $orange-french, $purple-french, $blue-french);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin brand-delice{
+    font-family: "Dancing Script", cursive;
+    background: linear-gradient(160deg, $blue-night, $blue-medium, $blue-light);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin brand-taste{
+    font-family: "Kaushan Script", cursive;
+    background: linear-gradient(160deg, $green, $green-medium, $green-light);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

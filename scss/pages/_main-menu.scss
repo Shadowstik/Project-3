@@ -1,0 +1,110 @@
+.heading-menu{
+    @include heading-title;
+    text-align: center;
+}
+
+.main-page{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-menu{
+    width: 41%;
+    height: 700px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 3rem;
+    font-family: "Segoe Print", cursive;
+    &.main-menu--note{
+        @include box-menu($bg-note);
+        color: $black-note;
+        & h2{
+            @include brand-note;
+            font-size: 3rem;
+            margin: 0 auto;
+            line-height: 3rem;
+            & span{
+                @include brand-note-logo;
+                font-size: 4.5rem;
+            }
+        }
+    }        
+    &.main-menu--french{
+        @include box-menu($bg-french);
+        font-family: "Source Serif Pro", serif;
+        color:$orange-french;
+        & h2{
+            @include brand-french;
+            font-size: 2rem;
+            margin: 20px auto;
+        }
+    }
+    &.main-menu--delice{
+        @include box-menu($bg-delice);
+        color: $blue-light;
+        & h2{
+            @include brand-delice;
+            font-size: 3rem;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+    }
+    &.main-menu--taste{
+        @include box-menu($bg-taste);
+        color: $green-light;
+        & h2{
+            @include brand-taste;
+            font-size: 3rem;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+    }
+}    
+
+.page-menu{
+    width: 80%;
+    color: $color-menu;
+    margin: 40px auto 100px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Print", cursive;
+    font-weight: normal;
+    &__heading{
+        width: 85%;
+        margin: 0 0 40px;
+        font-size: 1.1rem;
+        & h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        & div{
+            display: flex;
+            justify-content: space-between;
+            &> p:last-child{
+                font-size: 1.5rem;
+            } 
+        }       
+    }
+}
+
+.btn{
+    @include primary-theme;
+    width: 35%;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 0;
+    &__heading{
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+}
