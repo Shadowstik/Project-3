@@ -27,19 +27,26 @@
     text-decoration: none; 
     font-size: map-get($font-size-main,main);
     font-family: "Segoe Print", cursive;
-    @include mobile-only(tablet){
+    @include mobile-only(large){
         font-size: map-get($font-size-main,main)*0.9;
         height: 600px;
     }
-    @include mobile-only(mobile){
+    @include mobile-only(medium){
         font-size: map-get($font-size-main,main)*1.2;
         width: 55%;
         height: 700px;
+        margin: 30px;
     }
     @include mobile-only(small){
         font-size: map-get($font-size-main,main)*1.4;
         width: 70%;
-        height: 800px;
+        margin: 20px;
+    }
+    @include mobile-only(x-small){
+        font-size: map-get($font-size-main,main)*1.2;
+        width: 95%;
+        margin: 10px;
+        height: 500px;
     }
     &.main-menu--note{
         @include box-menu($bg-note);
@@ -49,11 +56,11 @@
             font-size: map-get($font-size-main,note);
             margin: 0 auto;
             line-height: 3rem;
-            @include mobile-only(tablet){
+            @include mobile-only(large){
                 font-size: map-get($font-size-main,note)*0.9;
                 line-height: 3rem*0.9;
             }
-            @include mobile-only(mobile){
+            @include mobile-only(medium){
                 font-size: map-get($font-size-main,note)*1.2;
                 line-height: 3rem*1.2;
             }
@@ -64,14 +71,17 @@
             & span{
                 @include brand-note-logo;
                 font-size: map-get($font-size-main,logo-note);
-                @include mobile-only(tablet){
+                @include mobile-only(large){
                     font-size: map-get($font-size-main,logo-note)*0.9;
                 }
-                @include mobile-only(mobile){
+                @include mobile-only(medium){
                     font-size: map-get($font-size-main,logo-note)*1.2;
                 }
                 @include mobile-only(small){
                     font-size: map-get($font-size-main,logo-note)*1.4;
+                }
+                @include mobile-only(x-small){
+                    font-size: map-get($font-size-main,logo-note)*1.2;
                 }
             }
         }
@@ -84,10 +94,10 @@
             @include brand-french;
             font-size: map-get($font-size-main,french);
             margin: 20px auto;
-            @include mobile-only(tablet){
+            @include mobile-only(large){
                 font-size: map-get($font-size-main,french)*0.9;
             }
-            @include mobile-only(mobile){
+            @include mobile-only(medium){
                 font-size: map-get($font-size-main,french)*1;
             }
             @include mobile-only(small){
@@ -103,10 +113,10 @@
             font-size: map-get($font-size-main,delice);
             margin: 0 auto;
             padding: 0 10px;
-            @include mobile-only(tablet){
+            @include mobile-only(large){
                 font-size: map-get($font-size-main,delice)*0.9;
             }
-            @include mobile-only(mobile){
+            @include mobile-only(medium){
                 font-size: map-get($font-size-main,delice)*1;
             }
             @include mobile-only(small){
@@ -122,14 +132,17 @@
             font-size: map-get($font-size-main,taste);
             margin: 0 auto;
             padding: 0 10px;
-            @include mobile-only(tablet){
+            @include mobile-only(large){
                 font-size: map-get($font-size-main,taste)*0.9;
             }
-            @include mobile-only(mobile){
+            @include mobile-only(medium){
                 font-size: map-get($font-size-main,taste)*1;
             }
             @include mobile-only(small){
                 font-size: map-get($font-size-main,taste)*1.4;
+            }
+            @include mobile-only(x-small){
+                font-size: map-get($font-size-main,taste)*1.2;
             }
         }
     }
@@ -141,12 +154,21 @@
     border-radius: 10px;
     margin: 20px auto;
     padding: 10px 0;
+    @include mobile-only(medium){
+        width: 45%;
+    }
+    @include mobile-only(small){
+        width: 55%;
+    }
+    @include mobile-only(x-small){
+        width: 80%;
+    }
     &__heading{
         font-size: map-get($font-size-main,btn);
-        @include mobile-only(tablet){
-            font-size: map-get($font-size-main,btn)*0.8;
-        }
         font-weight: normal;
         text-align: center;
+        @include mobile-only(large){
+            font-size: map-get($font-size-main,btn)*0.8;
+        }
     }
 }

@@ -12,5 +12,8 @@
         letter-spacing: -3px;
         text-decoration: none;
         color: $color-primary;
+        @include mobile-only(x-small){
+            font-size: map-get($font-size-main,logo)*0.9;
+        }
     }
 }

@@ -14,6 +14,10 @@
         font-weight: normal;
         text-decoration: none;
         color: $color-primary;
+        @include mobile-only(x-small){
+            font-size: map-get($font-size-main,footer)*0.8;
+            margin: auto;
+        }
     }
 }
 
