@@ -187,6 +187,13 @@ body {
   font-weight: normal;
 }
 
+@media screen and (max-width: 770px) {
+  .page-menu {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
+
 .page-menu__heading {
   width: 85%;
   margin: 0 0 40px;
@@ -203,29 +210,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 3.5rem;
 }
 
 @media screen and (max-width: 1024px) {
+  .page-menu__heading div {
+    line-height: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1265px) {
   .page-menu__heading div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-.page-menu__heading div > p:last-child {
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 1265px) {
-  .page-menu__heading div > p:last-child {
-    font-size: 1.2rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .page-menu__heading div > p:last-child {
+  .page-menu__heading div p {
+    border-bottom: 2px dashed #000;
+  }
+  .page-menu__heading div p:last-child {
     font-size: 1.5rem;
   }
 }
@@ -303,7 +315,7 @@ body {
 @media screen and (max-width: 770px) {
   .main-menu {
     font-size: 4.2rem;
-    width: 70%;
+    width: 80%;
     height: 500px;
   }
 }
@@ -312,6 +324,7 @@ body {
   .main-menu {
     font-size: 3.6rem;
     width: 95%;
+    height: 400px;
   }
 }
 
@@ -414,13 +427,19 @@ body {
 
 @media screen and (max-width: 890px) {
   .main-menu.main-menu--french h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
 @media screen and (max-width: 770px) {
   .main-menu.main-menu--french h2 {
     font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-menu.main-menu--french h2 {
+    font-size: 2.6rem;
   }
 }
 
@@ -452,7 +471,7 @@ body {
 
 @media screen and (max-width: 890px) {
   .main-menu.main-menu--delice h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -490,7 +509,7 @@ body {
 
 @media screen and (max-width: 890px) {
   .main-menu.main-menu--taste h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -552,10 +571,8 @@ body {
   background: #fcdfdb;
 }
 
-@media screen and (max-width: 1024px) {
-  .page-menu.page-menu--note img {
-    display: none;
-  }
+.page-menu.page-menu--note img {
+  width: 255px;
 }
 
 .page-menu.page-menu--note h1 {
@@ -565,13 +582,6 @@ body {
   margin: 50px auto;
   text-align: center;
   line-height: 3.5rem;
-}
-
-@media screen and (max-width: 1265px) {
-  .page-menu.page-menu--note h1 {
-    font-size: 2.8rem;
-    line-height: 2.8rem;
-  }
 }
 
 .page-menu.page-menu--note h1 span {
@@ -585,12 +595,6 @@ body {
   font-size: 6rem;
 }
 
-@media screen and (max-width: 1265px) {
-  .page-menu.page-menu--note h1 span {
-    font-size: 4.8rem;
-  }
-}
-
 .page-menu__heading.page-menu__heading--note {
   color: #3d1319;
   width: 75%;
@@ -600,26 +604,6 @@ body {
   font-size: 1.7rem;
 }
 
-@media screen and (max-width: 1265px) {
-  .page-menu__heading.page-menu__heading--note h2 {
-    font-size: 1.19rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .page-menu__heading.page-menu__heading--note h2 {
-    font-size: 2.04rem;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .page-menu__heading.page-menu__heading--note h2 {
-    font-size: 1.7rem;
-    margin: 0 auto;
-  }
-}
-
 .page-menu__heading.page-menu__heading--note div {
   font-size: 1.2rem;
   -webkit-box-align: center;
@@ -627,22 +611,7 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 1265px) {
-  .page-menu__heading.page-menu__heading--note div {
-    font-size: 0.96rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .page-menu__heading.page-menu__heading--note div {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed #3d1319;
-  }
-}
-
-.page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child {
+.page-menu__heading.page-menu__heading--note:nth-child(4) div:last-child {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -650,38 +619,18 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  line-height: 2.5rem;
 }
 
 @media screen and (max-width: 1265px) {
-  .page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child {
-    line-height: 2rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child {
-    line-height: 2.5rem;
+  .page-menu__heading.page-menu__heading--note:nth-child(4) div:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-.page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child > p:last-child {
+.page-menu__heading.page-menu__heading--note:nth-child(4) div:last-child p:last-child {
   font-size: 1.2rem;
-}
-
-@media screen and (max-width: 1265px) {
-  .page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child > p:last-child {
-    font-size: 0.96rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .page-menu__heading.page-menu__heading--note:nth-child(4) > div:last-child > p:last-child {
-    font-size: 1.2rem;
-  }
 }
 
 .page-menu__subtitle {
@@ -699,12 +648,6 @@ body {
   color: #3d1319;
   font-size: 3rem;
   margin: 0;
-}
-
-@media screen and (max-width: 1265px) {
-  .page-menu__subtitle h2 {
-    font-size: 2.4rem;
-  }
 }
 
 @media screen and (max-width: 770px) {
@@ -725,15 +668,9 @@ body {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 1265px) {
-  .page-menu__subtitle p {
-    font-size: 2.8rem;
-  }
-}
-
 @media screen and (max-width: 770px) {
   .page-menu__subtitle p {
-    font-size: 4.9rem;
+    display: none;
   }
 }
 
@@ -742,6 +679,10 @@ body {
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #fff5fe;
   padding: 40px 0;
+}
+
+.page-menu.page-menu--french img {
+  width: 290px;
 }
 
 .page-menu.page-menu--french h1 {
@@ -803,7 +744,14 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  line-height: 2rem;
+}
+
+@media screen and (max-width: 1265px) {
+  .page-menu__heading.page-menu__heading--french:nth-child(4) div:last-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .page-menu__heading.page-menu__heading--french:nth-child(4) div:last-child p:last-child {
@@ -815,6 +763,10 @@ body {
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #edefef;
   padding: 40px 0;
+}
+
+.page-menu.page-menu--delice img {
+  width: 300px;
 }
 
 .page-menu.page-menu--delice h1 {
@@ -830,12 +782,24 @@ body {
   padding: 15px;
 }
 
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--delice h1 {
+    text-align: center;
+  }
+}
+
 .page-menu__heading.page-menu__heading--delice {
   font-size: 1.2rem;
 }
 
 .page-menu__heading.page-menu__heading--delice div {
   margin: 0 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-menu__heading.page-menu__heading--delice div {
+    margin: 0;
+  }
 }
 
 .page-menu__heading.page-menu__heading--delice div img:first-child {
@@ -873,12 +837,24 @@ body {
   padding: 15px;
 }
 
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--taste h1 {
+    text-align: center;
+  }
+}
+
 .page-menu__heading.page-menu__heading--taste {
   font-size: 1.2rem;
 }
 
 .page-menu__heading.page-menu__heading--taste div {
   margin: 0 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-menu__heading.page-menu__heading--taste div {
+    margin: 0;
+  }
 }
 
 .page-menu__heading.page-menu__heading--taste div img:first-child {
@@ -888,7 +864,7 @@ body {
 }
 
 .page-menu__heading.page-menu__heading--taste div:first-child {
-  margin: 0;
+  margin: 20px 0;
 }
 
 .page-menu__heading.page-menu__heading--taste div:first-child h2 {
@@ -902,6 +878,7 @@ body {
   background: #e6e0e0;
   font-family: "montserrat", sans-serif;
   padding: 40px 0;
+  text-align: justify;
 }
 
 .page-menu.page-menu--legal h1 {
@@ -910,8 +887,16 @@ body {
   padding: 15px;
 }
 
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--legal h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+}
+
 .page-menu.page-menu--legal h2 {
   margin: 20px;
+  text-align: center;
 }
 
 /*%structure, header, footer, button, section, a, main, main h1{

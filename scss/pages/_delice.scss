@@ -1,18 +1,27 @@
 .page-menu.page-menu--delice{
     @include box-menu($bg-delice);
     padding: 40px 0;
+    & img{
+        width: 300px;
+    }
     & h1{
         @include brand-delice;
-        font-size: 4.5rem;
+        font-size: map-get($font-size-delice, delice);
         margin: 80px auto;
         padding: 15px;
+        @include mobile-only(small){
+            text-align: center;
+        }
     }
 }
 
 .page-menu__heading.page-menu__heading--delice{
-    font-size: 1.2rem;
+    font-size: map-get($font-size-delice, main);
     & div{
         margin: 0 80px;
+        @include mobile-only(large){
+            margin: 0;
+        }
         & img:first-child{
             transform: scalex(-1);
         } 
@@ -20,7 +29,7 @@
             margin: 0;
             & h2{
                 font-weight: normal;
-                font-size: 1.4rem;
+                font-size: map-get($font-size-delice, subtitle);
             }   
         } 
     }   

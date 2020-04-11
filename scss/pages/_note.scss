@@ -1,9 +1,7 @@
 .page-menu.page-menu--note{
     @include box-menu($bg-note);
     & img{
-        @include mobile-only(large){
-            display: none;
-        }
+        width: 255px;
     }
     & h1{
         @include brand-note;
@@ -11,16 +9,9 @@
         margin: 50px auto;
         text-align: center;
         line-height: 3.5rem;
-        @include mobile-only(x-large){
-            font-size: map-get($font-size-note, note)*0.8;
-            line-height: 3.5rem*0.8;
-        }
         & span{
             @include brand-note-logo;
-            font-size: 6rem;
-            @include mobile-only(x-large){
-                font-size: map-get($font-size-note, logo-note)*0.8;
-            }
+            font-size: map-get($font-size-note, logo-note);
         }
     }
 }
@@ -28,54 +19,22 @@
 .page-menu__heading.page-menu__heading--note{
     color: $black-note;
     width: 75%;
-
     & h2{
         font-size: map-get($font-size-note, subtitle);
-        @include mobile-only(x-large){
-            font-size: map-get($font-size-note, subtitle)*0.7;
-        }
-        @include mobile-only(large){
-            font-size: map-get($font-size-note, subtitle)*1.2;
-            margin: 0 auto;
-        }
-        @include mobile-only(small){
-            font-size: map-get($font-size-note, subtitle)*1;
-            margin: 0 auto;
-        }
     }
     & div{
         font-size: map-get($font-size-note, main);
         align-items: center;
-        @include mobile-only(x-large){
-            font-size: map-get($font-size-note, main)*0.8;
-        } 
-        @include mobile-only(large){
-            font-size: map-get($font-size-note, main)*1;
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px dashed $black-note;
-        }
     }   
     &:nth-child(4){
-        &> div:last-child{
+        & div:last-child{
             flex-direction: column;
             align-items: start;
-            line-height: 2.5rem;
             @include mobile-only(x-large){
-                line-height: 2.5rem*0.8;
-            }
-            @include mobile-only(large){
-                line-height: 2.5rem*1;
                 align-items: center;
             }
-            &> p:last-child{
+            & p:last-child{
                 font-size: map-get($font-size-note, main);
-                @include mobile-only(x-large){
-                    font-size: map-get($font-size-note, main)*0.8;
-                }
-                @include mobile-only(large){
-                    font-size: map-get($font-size-note, main)*1;
-                }   
             }
         }
     }       
@@ -89,9 +48,6 @@
         @include brand-note;
         font-size: map-get($font-size-note, note2);
         margin: 0;
-        @include mobile-only(x-large){
-            font-size: map-get($font-size-note, note2)*0.8;
-        }
         @include mobile-only(small){
             display: none;
         }   
@@ -100,11 +56,8 @@
         @include brand-note-logo;
         font-size: map-get($font-size-note, logo-note2);
         margin: 0 10px;
-        @include mobile-only(x-large){
-            font-size: map-get($font-size-note, logo-note2)*0.8;
-        }
         @include mobile-only(small){
-            font-size: map-get($font-size-note, logo-note2)*1.4;
+            display: none;
         } 
     }       
 }   

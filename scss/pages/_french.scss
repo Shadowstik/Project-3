@@ -1,15 +1,18 @@
 .page-menu.page-menu--french{
     @include box-menu($bg-french);
     padding: 40px 0;
+    & img{
+        width: 290px;
+    }
     & h1{
         @include brand-french;
-        font-size: 2.5rem;
+        font-size: map-get($font-size-french, french);
         margin: 80px auto;
     }   
 }
 
 .page-menu__heading.page-menu__heading--french{
-    font-size: 1.3rem;
+    font-size: map-get($font-size-french, main);
     font-family: "Lusitana", serif;
     & div{
         margin: 0 120px;
@@ -18,7 +21,7 @@
             margin: 30px 0;
             & h2{
                 font-family: "Source Serif Pro", serif;
-                font-size: 1.5rem;
+                font-size: map-get($font-size-french, subtitle);
             }
             & img:first-child{
                 transform: scalex(-1);
@@ -36,9 +39,11 @@
         & div:last-child{
             flex-direction: column;
             align-items: flex-start;
-            line-height: 2rem;
+            @include mobile-only(x-large){
+                align-items: center;
+            }
             & p:last-child{
-                font-size: 1.3rem;
+                font-size: map-get($font-size-french, main);
             }
         }
     }  

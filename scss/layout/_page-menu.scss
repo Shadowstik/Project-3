@@ -8,6 +8,10 @@
     align-items: center;
     font-family: "Segoe Print", cursive;
     font-weight: normal;
+    @include mobile-only(small){
+        width: 95%;
+        margin: 20px auto;
+    } 
     &__heading{
         width: 85%;
         margin: 0 0 40px;
@@ -16,18 +20,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            line-height: 3.5rem;
             @include mobile-only(large){
-                flex-direction: column;
-            }  
-            &> p:last-child{
-                font-size: map-get($font-size-page, mainlast);
-                @include mobile-only(x-large){
-                    font-size: map-get($font-size-page, mainlast)*0.8;
-                }
-                @include mobile-only(large){
-                    font-size: map-get($font-size-page, mainlast)*1;
-                }
+                line-height: 3.5rem*0.6;
             } 
+            @include mobile-only(x-large){
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            } 
+            & p{
+                @include mobile-only(large){
+                    border-bottom: 2px dashed $color-menu;
+                    &:last-child{
+                        font-size: map-get($font-size-page, mainlast);
+                    } 
+                }
+            }  
         }       
     }
 }
