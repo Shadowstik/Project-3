@@ -33,20 +33,17 @@
     }
     @include mobile-only(medium){
         font-size: map-get($font-size-main,main)*1.2;
-        width: 55%;
+        width: 70%;
         height: 700px;
-        margin: 30px;
     }
     @include mobile-only(small){
         font-size: map-get($font-size-main,main)*1.4;
         width: 70%;
-        margin: 20px;
+        height: 500px;
     }
     @include mobile-only(x-small){
         font-size: map-get($font-size-main,main)*1.2;
         width: 95%;
-        margin: 10px;
-        height: 500px;
     }
     &.main-menu--note{
         @include box-menu($bg-note);
