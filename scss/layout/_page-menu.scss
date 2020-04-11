@@ -12,16 +12,21 @@
         width: 85%;
         margin: 0 0 40px;
         font-size: 1.1rem;
-        & h2{
-            text-align: center;
-            font-size: 1.5rem;
-        }
         & div{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include mobile-only(large){
+                flex-direction: column;
+            }  
             &> p:last-child{
-                font-size: 1.5rem;
+                font-size: map-get($font-size-page, mainlast);
+                @include mobile-only(x-large){
+                    font-size: map-get($font-size-page, mainlast)*0.8;
+                }
+                @include mobile-only(large){
+                    font-size: map-get($font-size-page, mainlast)*1;
+                }
             } 
         }       
     }
