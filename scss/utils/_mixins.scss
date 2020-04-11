@@ -50,3 +50,10 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+@mixin mobile-only ($key){
+    @media screen and (max-width: map-get($breakpoints, $key)){
+        @content;
+    }
+}
+

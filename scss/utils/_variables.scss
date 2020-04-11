@@ -31,4 +31,55 @@ $green: #45993e;
 $green-medium: #8dd565;
 $green-light: #acef75;
 
+/* legal*/
 $bg-legal: #e6e0e0;
+
+/* media queries*/
+
+$breakpoints:(
+    tablet: 1024px,
+    mobile: 890px,
+    small: 770px
+);
+
+$font-size-main:(
+    main:3rem,
+    logo-note:4.5rem,
+    note:3rem,
+    french:2rem,
+    delice:3rem,
+    taste:3rem,
+    btn:2.5rem
+);
+
+$font-size-note:(
+    main:1.2rem,
+    logo-note:6rem,
+    note:3.5rem,
+    subtitle:1.7rem,
+    logo-note2:3.5rem,
+    note2:3rem
+);
+
+$font-size-french:(
+    main:1.3rem,
+    french:2.5rem,
+    subtitle:1.5rem
+);
+
+$font-size-delice:(
+    main:1.2rem,
+    delice:4.5rem,
+    subtitle:1.4rem
+);
+
+$font-size-taste:(
+    main:1.2rem,
+    taste:4.5rem,
+    subtitle:1.4rem
+);
+
+$font-size-legal:(
+    main:1rem,
+    legal:4rem
+);
