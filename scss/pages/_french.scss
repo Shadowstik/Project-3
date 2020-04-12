@@ -17,6 +17,9 @@
     & div{
         margin: 0 120px;
         align-items: top;
+        @include mobile-only(large){
+            margin: 20px 0;
+        }
         &:first-child{
             margin: 30px 0;
             & h2{

@@ -709,6 +709,12 @@ body {
           align-items: top;
 }
 
+@media screen and (max-width: 1024px) {
+  .page-menu__heading.page-menu__heading--french div {
+    margin: 20px 0;
+  }
+}
+
 .page-menu__heading.page-menu__heading--french div:first-child {
   margin: 30px 0;
 }
@@ -798,7 +804,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .page-menu__heading.page-menu__heading--delice div {
-    margin: 0;
+    margin: 20px 0;
   }
 }
 
@@ -853,7 +859,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .page-menu__heading.page-menu__heading--taste div {
-    margin: 0;
+    margin: 20px 0;
   }
 }
 

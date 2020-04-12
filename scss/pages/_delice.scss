@@ -20,7 +20,7 @@
     & div{
         margin: 0 80px;
         @include mobile-only(large){
-            margin: 0;
+            margin: 20px 0;
         }
         & img:first-child{
             transform: scalex(-1);
