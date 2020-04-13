@@ -100,6 +100,39 @@ body {
 /* menu 4*/
 /* legal*/
 /* media queries*/
+@-webkit-keyframes shaker {
+  0% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+@keyframes shaker {
+  0% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
 .header {
   width: 100%;
   height: 140px;
@@ -118,17 +151,32 @@ body {
           align-items: center;
 }
 
+.header a:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
+}
+
 .header__heading {
   font-size: 4.5rem;
   font-weight: bold;
   letter-spacing: -3px;
   text-decoration: none;
   color: #FACA44;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 550px) {
   .header__heading {
-    font-size: 4.05rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -155,17 +203,34 @@ body {
 
 .footer__heading {
   margin: auto 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
   text-decoration: none;
   color: #FACA44;
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
+}
+
+@media screen and (max-width: 770px) {
+  .footer__heading {
+    font-size: 1.8rem;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .footer__heading {
-    font-size: 1.2rem;
-    margin: auto;
+    font-size: 1rem;
+    text-align: center;
   }
+}
+
+.footer__heading:hover {
+  -webkit-animation: shaker 400ms infinite;
+          animation: shaker 400ms infinite;
 }
 
 .page-menu {
@@ -275,8 +340,8 @@ body {
 }
 
 .main-menu {
-  width: 41%;
-  height: 700px;
+  width: 35%;
+  height: 600px;
   margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,28 +358,16 @@ body {
           align-items: center;
   text-align: center;
   text-decoration: none;
-  font-size: 3rem;
-  font-family: "Segoe Print", cursive;
-}
-
-@media screen and (max-width: 1024px) {
-  .main-menu {
-    font-size: 2.7rem;
-    height: 600px;
-  }
 }
 
 @media screen and (max-width: 890px) {
   .main-menu {
-    font-size: 3.6rem;
     width: 70%;
-    height: 700px;
   }
 }
 
 @media screen and (max-width: 770px) {
   .main-menu {
-    font-size: 4.2rem;
     width: 80%;
     height: 500px;
   }
@@ -322,7 +375,6 @@ body {
 
 @media screen and (max-width: 550px) {
   .main-menu {
-    font-size: 3.6rem;
     width: 95%;
     height: 400px;
   }
@@ -332,7 +384,6 @@ body {
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #fcdfdb;
-  color: #3d1319;
 }
 
 .main-menu.main-menu--note h2 {
@@ -341,6 +392,14 @@ body {
   font-size: 3rem;
   margin: 0 auto;
   line-height: 3rem;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 1024px) {
@@ -357,10 +416,10 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 550px) {
   .main-menu.main-menu--note h2 {
-    font-size: 4.2rem;
-    line-height: 4.2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
@@ -387,24 +446,29 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 550px) {
   .main-menu.main-menu--note h2 span {
-    font-size: 6.3rem;
+    font-size: 4.5rem;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .main-menu.main-menu--note h2 span {
-    font-size: 5.4rem;
-  }
+.main-menu.main-menu--note h2 span:last-child {
+  font-size: 3rem;
+  font-family: "Segoe Print", cursive;
+  color: #3d1319;
+}
+
+.main-menu.main-menu--note h2:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
 }
 
 .main-menu.main-menu--french {
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #fff5fe;
-  font-family: "Source Serif Pro", serif;
-  color: #c67412;
 }
 
 .main-menu.main-menu--french h2 {
@@ -417,6 +481,14 @@ body {
   color: transparent;
   font-size: 2rem;
   margin: 20px auto;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 1024px) {
@@ -431,23 +503,29 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 550px) {
   .main-menu.main-menu--french h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .main-menu.main-menu--french h2 {
-    font-size: 2.6rem;
-  }
+.main-menu.main-menu--french h2 span {
+  font-family: "Source Serif Pro", serif;
+  color: #c67412;
+  font-size: 3rem;
+}
+
+.main-menu.main-menu--french h2:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
 }
 
 .main-menu.main-menu--delice {
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #edefef;
-  color: #229df9;
 }
 
 .main-menu.main-menu--delice h2 {
@@ -461,6 +539,14 @@ body {
   font-size: 3rem;
   margin: 0 auto;
   padding: 0 10px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 1024px) {
@@ -475,17 +561,29 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 550px) {
   .main-menu.main-menu--delice h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
   }
+}
+
+.main-menu.main-menu--delice h2 span {
+  font-size: 3rem;
+  font-family: "Segoe Print", cursive;
+  color: #229df9;
+}
+
+.main-menu.main-menu--delice h2:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
 }
 
 .main-menu.main-menu--taste {
   -webkit-box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
           box-shadow: 0 0 20px #c9c4c4, 0 0 20px #c9c4c4, 0 0 20px #c9c4c4;
   background: #fdfffd;
-  color: #acef75;
 }
 
 .main-menu.main-menu--taste h2 {
@@ -499,6 +597,14 @@ body {
   font-size: 3rem;
   margin: 0 auto;
   padding: 0 10px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
+  transition: opacity 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms;
+  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 1024px) {
@@ -513,16 +619,23 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 550px) {
   .main-menu.main-menu--taste h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .main-menu.main-menu--taste h2 {
-    font-size: 3.6rem;
-  }
+.main-menu.main-menu--taste h2 span {
+  font-size: 3rem;
+  font-family: "Segoe Print", cursive;
+  color: #acef75;
+}
+
+.main-menu.main-menu--taste h2:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
 }
 
 .fake-btn {
@@ -533,6 +646,7 @@ body {
   border-radius: 10px;
   margin: 20px auto;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 890px) {
@@ -547,12 +661,6 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .fake-btn {
-    width: 80%;
-  }
-}
-
 .fake-btn__heading {
   font-size: 2.5rem;
   font-weight: normal;
@@ -563,6 +671,22 @@ body {
   .fake-btn__heading {
     font-size: 2rem;
   }
+}
+
+@media screen and (max-width: 550px) {
+  .fake-btn__heading {
+    font-size: 1.25rem;
+  }
+}
+
+.fake-btn__heading span::after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+          animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026";
+  width: 0px;
 }
 
 .page-menu.page-menu--note {
@@ -602,6 +726,18 @@ body {
 
 .page-menu__heading.page-menu__heading--note h2 {
   font-size: 1.7rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), color-stop(5%, transparent)) no-repeat;
+  background: -webkit-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 300ms;
+  -o-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.page-menu__heading.page-menu__heading--note h2:hover {
+  background-size: 100% 100%;
 }
 
 .page-menu__heading.page-menu__heading--note div {
@@ -716,12 +852,24 @@ body {
 }
 
 .page-menu__heading.page-menu__heading--french div:first-child {
-  margin: 30px 0;
+  margin: 0;
 }
 
 .page-menu__heading.page-menu__heading--french div:first-child h2 {
   font-family: "Source Serif Pro", serif;
   font-size: 1.5rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), color-stop(5%, transparent)) no-repeat;
+  background: -webkit-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 300ms;
+  -o-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.page-menu__heading.page-menu__heading--french div:first-child h2:hover {
+  background-size: 100% 100%;
 }
 
 .page-menu__heading.page-menu__heading--french div:first-child img:first-child {
@@ -821,6 +969,18 @@ body {
 .page-menu__heading.page-menu__heading--delice div:first-child h2 {
   font-weight: normal;
   font-size: 1.4rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), color-stop(5%, transparent)) no-repeat;
+  background: -webkit-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 300ms;
+  -o-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.page-menu__heading.page-menu__heading--delice div:first-child h2:hover {
+  background-size: 100% 100%;
 }
 
 .page-menu.page-menu--taste {
@@ -876,6 +1036,18 @@ body {
 .page-menu__heading.page-menu__heading--taste div:first-child h2 {
   font-weight: normal;
   font-size: 1.4rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), color-stop(5%, transparent)) no-repeat;
+  background: -webkit-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
+  background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 300ms;
+  -o-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.page-menu__heading.page-menu__heading--taste div:first-child h2:hover {
+  background-size: 100% 100%;
 }
 
 .page-menu.page-menu--legal {

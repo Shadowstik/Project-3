@@ -57,3 +57,13 @@
     }
 }
 
+@keyframes shaker {
+    0%{ transform: translate(2px, 2px);}
+    100%{ transform: translate(-2px, -2px);}
+}
+
+@keyframes ellipsis {
+    to {
+    width: 20px;    
+    }
+}

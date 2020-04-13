@@ -16,8 +16,8 @@
 }
 
 .main-menu{
-    width: 41%;
-    height: 700px;
+    width: 35%;
+    height: 600px;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -25,35 +25,26 @@
     align-items: center;
     text-align: center;
     text-decoration: none; 
-    font-size: map-get($font-size-main,main);
-    font-family: "Segoe Print", cursive;
-    @include mobile-only(large){
-        font-size: map-get($font-size-main,main)*0.9;
-        height: 600px;
-    }
     @include mobile-only(medium){
-        font-size: map-get($font-size-main,main)*1.2;
         width: 70%;
-        height: 700px;
     }
     @include mobile-only(small){
-        font-size: map-get($font-size-main,main)*1.4;
         width: 80%;
         height: 500px;
     }
     @include mobile-only(x-small){
-        font-size: map-get($font-size-main,main)*1.2;
         width: 95%;
         height: 400px;
     }
     &.main-menu--note{
         @include box-menu($bg-note);
-        color: $black-note;
         & h2{
             @include brand-note;
             font-size: map-get($font-size-main,note);
             margin: 0 auto;
             line-height: 3rem;
+            transform: scale(1);
+            transition: transform 400ms, opacity 400ms;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,note)*0.9;
                 line-height: 3rem*0.9;
@@ -62,9 +53,9 @@
                 font-size: map-get($font-size-main,note)*1.2;
                 line-height: 3rem*1.2;
             }
-            @include mobile-only(small){
-                font-size: map-get($font-size-main,note)*1.4;
-                line-height: 3rem*1.4;
+            @include mobile-only(x-small){
+                font-size: map-get($font-size-main,note);
+                line-height: 3rem;
             }
             & span{
                 @include brand-note-logo;
@@ -75,75 +66,104 @@
                 @include mobile-only(medium){
                     font-size: map-get($font-size-main,logo-note)*1.2;
                 }
-                @include mobile-only(small){
-                    font-size: map-get($font-size-main,logo-note)*1.4;
-                }
                 @include mobile-only(x-small){
-                    font-size: map-get($font-size-main,logo-note)*1.2;
+                    font-size: map-get($font-size-main,logo-note);
                 }
+                &:last-child{
+                    font-size: map-get($font-size-main,main);
+                    font-family: "Segoe Print", cursive;
+                    color: $black-note;
+                }
+            }
+            &:hover{
+                transform: scale(1.2);
+                opacity: .4;
             }
         }
     }        
     &.main-menu--french{
         @include box-menu($bg-french);
-        font-family: "Source Serif Pro", serif;
-        color:$orange-french;
         & h2{
             @include brand-french;
             font-size: map-get($font-size-main,french);
             margin: 20px auto;
+            transform: scale(1);
+            transition: transform 400ms, opacity 400ms;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,french)*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,french)*1.2;
             }
-            @include mobile-only(small){
-                font-size: map-get($font-size-main,french)*1.4;
-            }
             @include mobile-only(x-small){
-                font-size: map-get($font-size-main,french)*1.3;
+                font-size: map-get($font-size-main,french);
+            }
+            & span{
+                font-family: "Source Serif Pro", serif;
+                color:$orange-french;
+                font-size: map-get($font-size-main,main);
+            }
+            &:hover{
+                transform: scale(1.2);
+                opacity: .4;
             }
         }
     }
     &.main-menu--delice{
         @include box-menu($bg-delice);
-        color: $blue-light;
         & h2{
             @include brand-delice;
             font-size: map-get($font-size-main,delice);
             margin: 0 auto;
             padding: 0 10px;
+            transform: scale(1);
+            transition: transform 400ms, opacity 400ms;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,delice)*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,delice)*1.2;
             }
-            @include mobile-only(small){
-                font-size: map-get($font-size-main,delice)*1.4;
+            @include mobile-only(x-small){
+                font-size: map-get($font-size-main,delice);
+            }
+            & span{
+                font-size: map-get($font-size-main,main);
+                font-family: "Segoe Print", cursive;
+                color: $blue-light;
+            }
+            &:hover{
+                transform: scale(1.2);
+                opacity: .4;
             }
         }
     }
     &.main-menu--taste{
         @include box-menu($bg-taste);
-        color: $green-light;
         & h2{
             @include brand-taste;
             font-size: map-get($font-size-main,taste);
             margin: 0 auto;
             padding: 0 10px;
+            transform: scale(1);
+            transition: transform 400ms, opacity 400ms;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,taste)*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,taste)*1.2;
             }
-            @include mobile-only(small){
-                font-size: map-get($font-size-main,taste)*1.4;
-            }
             @include mobile-only(x-small){
-                font-size: map-get($font-size-main,taste)*1.2;
+                font-size: map-get($font-size-main,taste);
+            }
+            & span{
+                font-size: map-get($font-size-main,main);
+                font-family: "Segoe Print", cursive;
+                color: $green-light;
+            }
+            &:hover{
+                transform: scale(1.2);
+                opacity: .4;
             }
         }
     }
@@ -155,14 +175,12 @@
     border-radius: 10px;
     margin: 20px auto;
     padding: 10px 0;
+    cursor: pointer;
     @include mobile-only(medium){
         width: 45%;
     }
     @include mobile-only(small){
         width: 55%;
-    }
-    @include mobile-only(x-small){
-        width: 80%;
     }
     &__heading{
         font-size: map-get($font-size-main,btn);
@@ -171,5 +189,19 @@
         @include mobile-only(large){
             font-size: map-get($font-size-main,btn)*0.8;
         }
+        @include mobile-only(x-small){
+            font-size: map-get($font-size-main,btn)*0.5;
+        }
+        & span{
+            &::after {
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: bottom;
+                animation: ellipsis steps(4,end) 900ms infinite;
+                content: "\2026";
+                width: 0px;
+            }
+        }
+        
     }
 }

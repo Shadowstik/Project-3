@@ -10,13 +10,21 @@
     bottom: 0;
     &__heading{
         margin: auto 30px;
-        font-size: 1.5rem;
+        font-size: map-get($font-size-main,footer);
         font-weight: normal;
         text-decoration: none;
         color: $color-primary;
-        @include mobile-only(x-small){
-            font-size: map-get($font-size-main,footer)*0.8;
+        transition: transform 400ms, opacity 400ms;
+        @include mobile-only(small){
+            font-size: map-get($font-size-main,footer)*0.9;
             margin: auto;
+        }
+        @include mobile-only(x-small){
+            font-size: map-get($font-size-main,footer)*0.5;
+            text-align: center;
+        }
+        &:hover{
+            animation: shaker 400ms infinite;
         }
     }
 }
