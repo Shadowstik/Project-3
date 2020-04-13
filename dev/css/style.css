@@ -9,7 +9,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
-  position: relative;
 }
 
 @font-face {
@@ -121,15 +120,27 @@ body {
   }
 }
 
-@-webkit-keyframes ellipsis {
-  to {
-    width: 20px;
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-@keyframes ellipsis {
-  to {
-    width: 20px;
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -151,32 +162,17 @@ body {
           align-items: center;
 }
 
-.header a:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-  opacity: .4;
-}
-
 .header__heading {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: -3px;
   text-decoration: none;
   color: #FACA44;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 550px) {
   .header__heading {
-    font-size: 3.6rem;
+    font-size: 4rem;
   }
 }
 
@@ -229,8 +225,8 @@ body {
 }
 
 .footer__heading:hover {
-  -webkit-animation: shaker 400ms infinite;
-          animation: shaker 400ms infinite;
+  -webkit-animation: shaker 150ms infinite;
+          animation: shaker 150ms infinite;
 }
 
 .page-menu {
@@ -262,7 +258,6 @@ body {
 .page-menu__heading {
   width: 85%;
   margin: 0 0 40px;
-  font-size: 1.1rem;
 }
 
 .page-menu__heading div {
@@ -305,6 +300,61 @@ body {
   .page-menu__heading div p:last-child {
     font-size: 1.5rem;
   }
+}
+
+.fake-btn {
+  background-color: #569C86;
+  color: #FACA44;
+  font-family: "montserrat", sans-serif;
+  width: 35%;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 890px) {
+  .fake-btn {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .fake-btn {
+    width: 55%;
+  }
+}
+
+.fake-btn__heading {
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .fake-btn__heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fake-btn__heading {
+    font-size: 1.25rem;
+  }
+}
+
+.fake-btn__heading span {
+  -webkit-animation: blink 1.4s infinite both;
+          animation: blink 1.4s infinite both;
+}
+
+.fake-btn__heading span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.fake-btn__heading span:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 .heading-menu {
@@ -395,11 +445,11 @@ body {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
+  -webkit-transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, -webkit-transform .4s;
+  -o-transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -459,9 +509,9 @@ body {
 }
 
 .main-menu.main-menu--note h2:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: .4;
 }
 
@@ -484,11 +534,11 @@ body {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
+  -webkit-transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, -webkit-transform .4s;
+  -o-transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -516,9 +566,9 @@ body {
 }
 
 .main-menu.main-menu--french h2:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: .4;
 }
 
@@ -542,11 +592,11 @@ body {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
+  -webkit-transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, -webkit-transform .4s;
+  -o-transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -574,9 +624,9 @@ body {
 }
 
 .main-menu.main-menu--delice h2:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: .4;
 }
 
@@ -600,11 +650,11 @@ body {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
+  -webkit-transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, -webkit-transform .4s;
+  -o-transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s;
+  transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -632,61 +682,10 @@ body {
 }
 
 .main-menu.main-menu--taste h2:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: .4;
-}
-
-.fake-btn {
-  background-color: #569C86;
-  color: #FACA44;
-  font-family: "montserrat", sans-serif;
-  width: 35%;
-  border-radius: 10px;
-  margin: 20px auto;
-  padding: 10px 0;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 890px) {
-  .fake-btn {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .fake-btn {
-    width: 55%;
-  }
-}
-
-.fake-btn__heading {
-  font-size: 2.5rem;
-  font-weight: normal;
-  text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .fake-btn__heading {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .fake-btn__heading {
-    font-size: 1.25rem;
-  }
-}
-
-.fake-btn__heading span::after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-          animation: ellipsis steps(4, end) 900ms infinite;
-  content: "\2026";
-  width: 0px;
 }
 
 .page-menu.page-menu--note {
@@ -731,12 +730,13 @@ body {
   background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
   background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
   background-size: 0% 100%;
-  -webkit-transition: background-size 300ms;
-  -o-transition: background-size 300ms;
-  transition: background-size 300ms;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .page-menu__heading.page-menu__heading--note h2:hover {
+  display: inline-block;
   background-size: 100% 100%;
 }
 
@@ -831,6 +831,7 @@ body {
   color: transparent;
   font-size: 2.5rem;
   margin: 80px auto;
+  text-align: center;
 }
 
 .page-menu__heading.page-menu__heading--french {
@@ -863,9 +864,9 @@ body {
   background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
   background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
   background-size: 0% 100%;
-  -webkit-transition: background-size 300ms;
-  -o-transition: background-size 300ms;
-  transition: background-size 300ms;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .page-menu__heading.page-menu__heading--french div:first-child h2:hover {
@@ -974,9 +975,9 @@ body {
   background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
   background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
   background-size: 0% 100%;
-  -webkit-transition: background-size 300ms;
-  -o-transition: background-size 300ms;
-  transition: background-size 300ms;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .page-menu__heading.page-menu__heading--delice div:first-child h2:hover {
@@ -1041,9 +1042,9 @@ body {
   background: -o-linear-gradient(bottom, #000 5%, transparent 5%) no-repeat;
   background: linear-gradient(to top, #000 5%, transparent 5%) no-repeat;
   background-size: 0% 100%;
-  -webkit-transition: background-size 300ms;
-  -o-transition: background-size 300ms;
-  transition: background-size 300ms;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .page-menu__heading.page-menu__heading--taste div:first-child h2:hover {
@@ -1075,12 +1076,34 @@ body {
 .page-menu.page-menu--legal h2 {
   margin: 20px;
   text-align: center;
+  font-size: 2rem;
 }
 
-/*%structure, header, footer, button, section, a, main, main h1{
-    border: 2px solid red;
-}*/
-/*div, p{
-    border: 1px solid red;
-}*/
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--legal h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--legal h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.page-menu.page-menu--legal p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 770px) {
+  .page-menu.page-menu--legal p {
+    font-size: 1.04rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .page-menu.page-menu--legal p {
+    font-size: 0.78rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

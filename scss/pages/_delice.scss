@@ -30,9 +30,7 @@
             & h2{
                 font-weight: normal;
                 font-size: map-get($font-size-delice, subtitle);
-                background: linear-gradient(to top,$color-menu 5%, transparent 5%) no-repeat;
-                background-size: 0% 100%;
-                transition: background-size 300ms;
+                @include underline-anim;
                 &:hover{
                     background-size: 100% 100%;
                 }

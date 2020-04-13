@@ -57,13 +57,25 @@
     }
 }
 
+@mixin underline-anim{
+    background: linear-gradient(to top,$color-menu 5%, transparent 5%) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .3s;
+}
+
 @keyframes shaker {
     0%{ transform: translate(2px, 2px);}
     100%{ transform: translate(-2px, -2px);}
 }
 
-@keyframes ellipsis {
-    to {
-    width: 20px;    
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

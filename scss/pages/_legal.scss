@@ -15,5 +15,21 @@
     & h2{
         margin: 20px;
         text-align: center;
+        font-size: map-get($font-size-legal, subtitle);
+        @include mobile-only(small){
+            font-size: map-get($font-size-legal, subtitle)*0.8;
+        }
+        @include mobile-only(small){
+            font-size: map-get($font-size-legal, subtitle)*0.6;
+        }
+    }
+    & p{
+        font-size: map-get($font-size-legal, main);
+        @include mobile-only(small){
+            font-size: map-get($font-size-legal, main)*0.8;
+        }
+        @include mobile-only(x-small){
+            font-size: map-get($font-size-legal, main)*0.6;
+        }
     }
 }

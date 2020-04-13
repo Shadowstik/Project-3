@@ -8,6 +8,7 @@
         @include brand-french;
         font-size: map-get($font-size-french, french);
         margin: 80px auto;
+        text-align: center;
     }   
 }
 
@@ -25,9 +26,7 @@
             & h2{
                 font-family: "Source Serif Pro", serif;
                 font-size: map-get($font-size-french, subtitle);
-                background: linear-gradient(to top,$color-menu 5%, transparent 5%) no-repeat;
-                background-size: 0% 100%;
-                transition: background-size 300ms;
+                @include underline-anim;
                 &:hover{
                     background-size: 100% 100%;
                 }
