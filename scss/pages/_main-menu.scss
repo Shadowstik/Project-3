@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @include mobile-only(mobile){
+    @include mobile-only(medium){
         flex-direction: column;
         align-items: center;
     }

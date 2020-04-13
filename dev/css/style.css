@@ -21,7 +21,7 @@ body {
 
 @font-face {
   font-family: "Montserrat";
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url("fonts/montserrat-v14-latin-700.eot");
   src: url("fonts/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-v14-latin-700.woff") format("woff"), url("fonts/montserrat-v14-latin-700.ttf") format("truetype"), url("fonts/montserrat-v14-latin-700.svg?#webfont") format("svg");
@@ -61,7 +61,7 @@ body {
 
 @font-face {
   font-family: "Source Serif Pro";
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url("fonts/source-serif-pro-v7-latin-700.eot");
   src: url("fonts/source-serif-pro-v7-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/source-serif-pro-v7-latin-700.woff") format("woff"), url("fonts/source-serif-pro-v7-latin-700.ttf") format("truetype"), url("fonts/source-serif-pro-v7-latin-700.svg?#webfont") format("svg");
@@ -85,7 +85,7 @@ body {
 
 @font-face {
   font-family: "Segoe Print";
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url("fonts/SegoePrint-Bold.eot");
   src: url("fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SegoePrint-Bold.woff") format("woff"), url("fonts/SegoePrint-Bold.ttf") format("truetype"), url("fonts/SegoePrint-Bold.svg?#webfont") format("svg");
@@ -377,7 +377,7 @@ body {
           justify-content: center;
 }
 
-@media screen and (max-width: null) {
+@media screen and (max-width: 890px) {
   .main-page {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -841,9 +841,9 @@ body {
 
 .page-menu__heading.page-menu__heading--french div {
   margin: 0 120px;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1024px) {

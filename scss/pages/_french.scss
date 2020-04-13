@@ -17,7 +17,7 @@
     font-family: "Lusitana", serif;
     & div{
         margin: 0 120px;
-        align-items: top;
+        align-items: center;
         @include mobile-only(large){
             margin: 20px 0;
         }
