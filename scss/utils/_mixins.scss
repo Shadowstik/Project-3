@@ -22,7 +22,6 @@
 
 @mixin brand-note-logo{
     background: linear-gradient(to right, $magenta, $middle, $orange);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -30,7 +29,6 @@
 @mixin brand-french{
     font-family: "Croissant One", serif;
     background: linear-gradient(160deg, $orange-french, $purple-french, $blue-french);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -38,7 +36,6 @@
 @mixin brand-delice{
     font-family: "Dancing Script", cursive;
     background: linear-gradient(160deg, $blue-night, $blue-medium, $blue-light);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -46,7 +43,6 @@
 @mixin brand-taste{
     font-family: "Kaushan Script", cursive;
     background: linear-gradient(160deg, $green, $green-medium, $green-light);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }

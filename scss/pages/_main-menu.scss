@@ -16,8 +16,8 @@
 }
 
 .main-menu{
-    width: 35%;
-    height: 600px;
+    width: 40%;
+    height: 700px;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -42,6 +42,7 @@
             @include brand-note;
             font-size: map-get($font-size-main,note);
             margin: 0 auto;
+            padding: 25px;
             line-height: 3rem;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
@@ -77,7 +78,7 @@
             }
             &:hover{
                 transform: scale(1.1);
-                opacity: .4;
+                opacity: .5;
             }
         }
     }        
@@ -87,6 +88,7 @@
             @include brand-french;
             font-size: map-get($font-size-main,french);
             margin: 20px auto;
+            padding: 25px;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
@@ -105,7 +107,7 @@
             }
             &:hover{
                 transform: scale(1.1);
-                opacity: .4;
+                opacity: .5;
             }
         }
     }
@@ -115,7 +117,7 @@
             @include brand-delice;
             font-size: map-get($font-size-main,delice);
             margin: 0 auto;
-            padding: 0 10px;
+            padding: 25px;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
@@ -134,7 +136,7 @@
             }
             &:hover{
                 transform: scale(1.1);
-                opacity: .4;
+                opacity: .5;
             }
         }
     }
@@ -144,7 +146,7 @@
             @include brand-taste;
             font-size: map-get($font-size-main,taste);
             margin: 0 auto;
-            padding: 0 10px;
+            padding: 25px;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
@@ -163,7 +165,7 @@
             }
             &:hover{
                 transform: scale(1.1);
-                opacity: .4;
+                opacity: .5;
             }
         }
     }
