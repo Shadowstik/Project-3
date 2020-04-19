@@ -20,12 +20,6 @@
     color: $black-note;
 }
 
-@mixin brand-note-logo{
-    background: linear-gradient(to right, $magenta, $middle, $orange);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 @mixin brand-french{
     font-family: "Croissant One", serif;
     background: linear-gradient(160deg, $orange-french, $purple-french, $blue-french);
@@ -54,7 +48,7 @@
 }
 
 @mixin underline-anim{
-    background: linear-gradient(to top,$color-menu 5%, transparent 5%) no-repeat;
+    background: linear-gradient(to top, $color-menu 7%, transparent 5%) no-repeat;
     background-size: 0% 100%;
     transition: background-size .3s;
 }

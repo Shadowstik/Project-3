@@ -1,17 +1,13 @@
 .page-menu.page-menu--note{
     @include box-menu($bg-note);
-    & img{
-        width: 255px;
-    }
     & h1{
         @include brand-note;
         font-size: map-get($font-size-note, note);
         margin: 50px auto;
         text-align: center;
         line-height: 3.5rem;
-        & span{
-            @include brand-note-logo;
-            font-size: map-get($font-size-note, logo-note);
+        & img{
+            transform: scale(1.2);
         }
     }
 }
@@ -21,6 +17,7 @@
     width: 75%;
     & h2{
         font-size: map-get($font-size-note, subtitle);
+        line-height: 2.5rem;
         @include underline-anim;
         &:hover{
             display: inline-block;
@@ -46,23 +43,17 @@
 }
 
 .page-menu__subtitle{
-    display: flex;
-    align-items: center;
-    margin: 10px auto 50px;    
+    margin: 10px auto 50px; 
+    display: flex; 
+    @include mobile-only(small){
+        display: none;
+    }   
     & h2{
         @include brand-note;
         font-size: map-get($font-size-note, note2);
         margin: 0;
-        @include mobile-only(small){
-            display: none;
-        }   
-    }
-    & p{
-        @include brand-note-logo;
-        font-size: map-get($font-size-note, logo-note2);
-        margin: 0 10px;
-        @include mobile-only(small){
-            display: none;
-        } 
-    }       
+        & img{
+            transform: scale(1.1);
+        }  
+    }      
 }   

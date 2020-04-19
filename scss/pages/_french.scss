@@ -26,6 +26,7 @@
             & h2{
                 font-family: "Source Serif Pro", serif;
                 font-size: map-get($font-size-french, subtitle);
+                line-height: 2.5rem;
                 @include underline-anim;
                 &:hover{
                     background-size: 100% 100%;

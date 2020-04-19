@@ -27,13 +27,14 @@
     text-decoration: none; 
     @include mobile-only(medium){
         width: 70%;
+        margin: 20px 0;
     }
     @include mobile-only(small){
         width: 80%;
         height: 500px;
     }
     @include mobile-only(x-small){
-        width: 95%;
+        width: 85%;
         height: 400px;
     }
     &.main-menu--note{
@@ -43,39 +44,52 @@
             font-size: map-get($font-size-main,note);
             margin: 0 auto;
             padding: 25px;
-            line-height: 3rem;
+            line-height: 2.5rem;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,note)*0.9;
-                line-height: 3rem*0.9;
+                line-height: 2.5rem*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,note)*1.2;
-                line-height: 3rem*1.2;
+                line-height: 2.5rem*1.2;
             }
             @include mobile-only(x-small){
                 font-size: map-get($font-size-main,note);
-                line-height: 3rem;
+                line-height: 2.5rem;
             }
-            & span{
-                @include brand-note-logo;
-                font-size: map-get($font-size-main,logo-note);
+            & img{
+                transform: scale(1.2);
                 @include mobile-only(large){
-                    font-size: map-get($font-size-main,logo-note)*0.9;
+                    transform: scale(1.1);
                 }
                 @include mobile-only(medium){
-                    font-size: map-get($font-size-main,logo-note)*1.2;
+                    transform: scale(1.4);
                 }
                 @include mobile-only(x-small){
-                    font-size: map-get($font-size-main,logo-note);
-                }
-                &:last-child{
-                    font-size: map-get($font-size-main,main);
-                    font-family: "Segoe Print", cursive;
-                    color: $black-note;
+                    transform: scale(1.2);
                 }
             }
+            & span{
+                font-size: map-get($font-size-main,main);
+                font-family: "Segoe Print", cursive;
+                color: $black-note;
+                line-height: 9rem;
+                font-weight: normal;
+                @include mobile-only(large){
+                    font-size: map-get($font-size-main,main)*0.9;
+                    line-height: 9rem*0.9;
+                }
+                @include mobile-only(medium){
+                    font-size: map-get($font-size-main,main)*1.2;
+                    line-height: 9rem*1.2;
+                }
+                @include mobile-only(x-small){
+                    font-size: map-get($font-size-main,main);
+                    line-height: 9rem;
+                }
+            }    
             &:hover{
                 transform: scale(1.1);
                 opacity: .5;
@@ -89,16 +103,20 @@
             font-size: map-get($font-size-main,french);
             margin: 20px auto;
             padding: 25px;
+            line-height: 6rem;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,french)*0.9;
+                line-height: 6rem*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,french)*1.2;
+                line-height: 6rem*1.2;
             }
             @include mobile-only(x-small){
                 font-size: map-get($font-size-main,french);
+                line-height: 6rem;
             }
             & span{
                 font-family: "Source Serif Pro", serif;
@@ -118,21 +136,26 @@
             font-size: map-get($font-size-main,delice);
             margin: 0 auto;
             padding: 25px;
+            line-height: 6rem;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,delice)*0.9;
+                line-height: 6rem*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,delice)*1.2;
+                line-height: 6rem*1.2;
             }
             @include mobile-only(x-small){
                 font-size: map-get($font-size-main,delice);
+                line-height: 6rem;
             }
             & span{
                 font-size: map-get($font-size-main,main);
                 font-family: "Segoe Print", cursive;
                 color: $blue-light;
+                font-weight: normal;
             }
             &:hover{
                 transform: scale(1.1);
@@ -147,21 +170,26 @@
             font-size: map-get($font-size-main,taste);
             margin: 0 auto;
             padding: 25px;
+            line-height: 6rem;
             transform: scale(1);
             transition: transform .4s, opacity .4s;
             @include mobile-only(large){
                 font-size: map-get($font-size-main,taste)*0.9;
+                line-height: 6rem*0.9;
             }
             @include mobile-only(medium){
                 font-size: map-get($font-size-main,taste)*1.2;
+                line-height: 6rem*1.2;
             }
             @include mobile-only(x-small){
                 font-size: map-get($font-size-main,taste);
+                line-height: 6rem;
             }
             & span{
                 font-size: map-get($font-size-main,main);
                 font-family: "Segoe Print", cursive;
                 color: $green-light;
+                font-weight: normal;
             }
             &:hover{
                 transform: scale(1.1);
