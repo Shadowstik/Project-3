@@ -3,15 +3,6 @@
     font-family: "montserrat", sans-serif;
     padding: 40px 0;
     text-align: justify;
-    & h1{
-        font-size: map-get($font-size-legal, legal);
-        margin: 40px auto;
-        padding: 15px;
-        @include mobile-only(small){
-            font-size: map-get($font-size-legal, legal)*0.8;
-            text-align: center;
-        }
-    }
     & h2{
         margin: 20px;
         text-align: center;

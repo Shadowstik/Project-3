@@ -1075,19 +1075,6 @@ body {
   text-align: justify;
 }
 
-.page-menu.page-menu--legal h1 {
-  font-size: 4rem;
-  margin: 40px auto;
-  padding: 15px;
-}
-
-@media screen and (max-width: 770px) {
-  .page-menu.page-menu--legal h1 {
-    font-size: 3.2rem;
-    text-align: center;
-  }
-}
-
 .page-menu.page-menu--legal h2 {
   margin: 20px;
   text-align: center;
