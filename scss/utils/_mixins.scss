@@ -55,10 +55,11 @@
 
 @keyframes shaker {
     0%{ transform: translate(2px, 2px);}
-    100%{ transform: translate(-2px, -2px);}
+    50%{ transform: translate(-2px, -2px);}
+    100%{ transform: translate(2px, 2px);}
 }
 
-@keyframes blink {
+@keyframes dot {
     0% {
         opacity: 0;
     }

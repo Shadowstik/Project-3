@@ -104,9 +104,13 @@ body {
     -webkit-transform: translate(2px, 2px);
             transform: translate(2px, 2px);
   }
-  100% {
+  50% {
     -webkit-transform: translate(-2px, -2px);
             transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
   }
 }
 @keyframes shaker {
@@ -114,13 +118,17 @@ body {
     -webkit-transform: translate(2px, 2px);
             transform: translate(2px, 2px);
   }
-  100% {
+  50% {
     -webkit-transform: translate(-2px, -2px);
             transform: translate(-2px, -2px);
   }
+  100% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
 }
 
-@-webkit-keyframes blink {
+@-webkit-keyframes dot {
   0% {
     opacity: 0;
   }
@@ -132,7 +140,7 @@ body {
   }
 }
 
-@keyframes blink {
+@keyframes dot {
   0% {
     opacity: 0;
   }
@@ -203,11 +211,6 @@ body {
   font-weight: normal;
   text-decoration: none;
   color: #FACA44;
-  -webkit-transition: opacity 400ms, -webkit-transform 400ms;
-  transition: opacity 400ms, -webkit-transform 400ms;
-  -o-transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms;
-  transition: transform 400ms, opacity 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 770px) {
@@ -343,8 +346,8 @@ body {
 }
 
 .fake-btn__heading span {
-  -webkit-animation: blink 1.4s infinite both;
-          animation: blink 1.4s infinite both;
+  -webkit-animation: dot 1.4s infinite both;
+          animation: dot 1.4s infinite both;
 }
 
 .fake-btn__heading span:nth-child(2) {
